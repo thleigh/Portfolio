@@ -1,8 +1,10 @@
 import './App.css';
+import NavBar from './components/NavBar'
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <NavBar />
       <h1>
         Tanner Leigh
       </h1>
