@@ -40,9 +40,18 @@ body {
     100% {transform: translate(0, -0px); }
 }
 
-
 .welcomeContainer {
-    margin-top: 200px;
+    margin-top: 250px;
     margin-left: 200px;
     position: absolute;
+}
+
+.hover {
+    transition: font-size 0.3s ease-out;
+    margin-bottom: -20px;
+}
+
+.hover:hover {
+    font-size: 25px;
+    transition: font-size 0.3s ease-in-out;
 }

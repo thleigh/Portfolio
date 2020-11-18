@@ -7,11 +7,11 @@ const Welcome = (props) => {
                 <div className="floating">
                     <h2> Welcome </h2>
                     <p> 
-                        My name is <b>Tanner Leigh</b>. 
+                        <div className="hover"> My name is <b>Tanner Leigh</b>. </div>
                         <br></br>
-                        This is my portfolio site.
+                        <div className="hover"> This is my portfolio site. </div>
                         <br></br>
-                        Please make yourself at home.
+                        <div className="hover"> Please make yourself at home. </div>
                     </p>
                 </div>
             </div>
