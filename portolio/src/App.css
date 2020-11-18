@@ -13,22 +13,25 @@ a {
     position: fixed;
 }
 
+.container {
+    top: 20px;
+    position: fixed;
+}
+
 .profilePic {
     width: 240px;
 }
 
-.navbarRight {
+.aboutContainer {
     color: black;
     text-decoration: none;
     margin-top: 10px;
     display: block;
 }
 
-.navbarContainer {
+.about {
     text-align: center;
-    position: fixed;
-    top: 100px;
-    right: 70px;
+    margin-top: 150px;
 }
 
 .floating {
