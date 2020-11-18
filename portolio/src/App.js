@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar'
 import Welcome from './components/Welcome'
+import Work from './components/Work'
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
       <div>
         <Switch>
           <Route path="/Welcome" component={Welcome} />
+          <Route path="/Work" component={Work} />
           <Route path="*" component={Welcome} />
-          
+
         </Switch>
       </div>
     </div>
