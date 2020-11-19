@@ -1,6 +1,7 @@
 body {
     font-family: 'DM Serif Text','Helvetica';
     cursor: crosshair;
+    background: rgb(214, 210, 196, 10%);
 }
 
 a {
@@ -36,7 +37,7 @@ a {
 }
 
 .aboutMain {
-    background-color: white;
+    background: rgb(214, 210, 196, 0.5%);
     box-shadow: 3px 3px 5px 0.2px;
     width: 600px;
     height: 600px;
