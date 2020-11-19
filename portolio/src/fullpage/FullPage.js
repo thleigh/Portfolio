@@ -18,10 +18,10 @@ class FullPage extends React.Component {
           
         },
         {
-          page: <Resources />
+          page: <About />
         },
         {
-          page: <About />,
+          page: <Contact />,
         }
       ],
     };
