@@ -31,7 +31,16 @@ a {
 
 .about {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 20%;
+    padding: 70px;
+}
+
+.aboutMain {
+    background-color: white;
+    box-shadow: 3px 3px 5px 0.2px;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
 }
 
 .floating {
