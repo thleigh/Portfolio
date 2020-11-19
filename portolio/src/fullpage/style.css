@@ -1,0 +1,27 @@
+body{
+    font-family: arial;
+}
+
+.custom-section{
+    text-align: center;
+    font-size: 4em;
+    z-index: 1
+}
+
+.fullPageBody {
+    font-size: 20px;
+    margin-top: -250px;
+}
+
+.mapContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    }
+
+    
+
+
+
