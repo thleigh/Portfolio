@@ -9,12 +9,17 @@ const SEL = 'custom-section';
 const SECTION_SEL = `.${SEL}`;
 
 class FullPage extends React.Component {
+
+  moveSectionDown() {
+    fullpage_api.moveSectionDown(); 
+  }
+
   constructor(props) {
     super();
     this.state = {
       fullpages: [
         {
-          page: <Welcome />
+          page: <Welcome fullpage_api={props.fullpage_api}/>
           
         },
         {

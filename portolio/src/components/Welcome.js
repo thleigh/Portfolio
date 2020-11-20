@@ -1,11 +1,6 @@
 import React from 'react';
-import ReactFullpage from '@fullpage/react-fullpage';
 
 const Welcome = (props) => {
-
-    let moveSectionDown = () => {
-        fullpage_api.moveSectionDown()
-    }
 
     return (
         <div>
@@ -19,7 +14,7 @@ const Welcome = (props) => {
                         <br></br>
                         <div className="hover"> Please make yourself at home. </div>
                         <div>
-                            <button className="enterButton" onClick={() => moveSectionDown()}>Enter</button>
+                            <button className="enterButton" onClick={() => this.props.fullpage_api.moveSectionDown()}>Enter</button>
                         </div>
                     </p>
                 </div>
