@@ -23,7 +23,7 @@ const Fullpage = () => (
         <ReactFullpage.Wrapper>
           <div className="section">
             <Router>
-              <Welcome />
+              <Welcome props={fullpageApi}/>
             </Router>
           </div>
           <div className="section">
