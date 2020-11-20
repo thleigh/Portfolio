@@ -9,13 +9,12 @@ import About from './components/About';
 import Contact from './components/Contact'
 import NavBar from './components/NavBar';
 
-
 const Fullpage = () => (
   <ReactFullpage
     // API KEY
      licenseKey={'SCROLL_KEY'}
     // the page names in the url set as #
-    anchors={['Welcome', 'About', 'Contact']}
+    anchors={['Welcome', 'Main', 'Contact']}
     // navigation dots on the right
     navigation
     scrollingSpeed = {700}
@@ -29,7 +28,7 @@ const Fullpage = () => (
           <ReactFullpage.Wrapper>
             <div className="section">
               <Router>
-                <Welcome props={fullpageApi}/>
+                <Welcome fullpageApi={fullpageApi}/>
               </Router>
             </div>
             <div className="section">

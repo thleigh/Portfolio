@@ -1,7 +1,6 @@
 import React from 'react';
 
-const Welcome = (props) => {
-
+const Welcome = ({fullpageApi}) => {
     return (
         <div>
             <div className="welcomeContainer">
@@ -14,7 +13,7 @@ const Welcome = (props) => {
                         <br></br>
                         <div className="hover"> Please make yourself at home. </div>
                         <div>
-                            <button className="enterButton" onClick={() => props.fullpageApi.moveSectionDown()}>Enter</button>
+                            <button className="enterButton" onClick={() => fullpageApi.moveSectionDown()}>Enter</button>
                         </div>
                     </p>
                 </div>
