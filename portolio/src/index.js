@@ -33,7 +33,7 @@ const Fullpage = () => (
             </div>
             <div className="section">
               <Router>
-                <About />
+                <About fullpageApi={fullpageApi}/>
               </Router>
             </div>
             <div className="section">
