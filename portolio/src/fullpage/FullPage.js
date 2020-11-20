@@ -14,7 +14,7 @@ class FullPage extends React.Component {
     this.state = {
       fullpages: [
         {
-          page: <Welcome user={props.user}/>
+          page: <Welcome />
           
         },
         {

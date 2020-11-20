@@ -1,7 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import ReactFullpage from '@fullpage/react-fullpage';
 
 const Welcome = (props) => {
+
+    let moveSectionDown = () => {
+        fullpage_api.moveSectionDown()
+    }
+
     return (
         <div>
             <div className="welcomeContainer">
@@ -14,9 +19,7 @@ const Welcome = (props) => {
                         <br></br>
                         <div className="hover"> Please make yourself at home. </div>
                         <div>
-                            <Link to="/About">
-                                <button className="enterButton">Enter</button>
-                            </Link>
+                            <button className="enterButton" onClick={() => moveSectionDown()}>Enter</button>
                         </div>
                     </p>
                 </div>

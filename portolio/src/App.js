@@ -13,10 +13,10 @@ function App() {
       <NavBar />
       <div>
         <Switch>
-          <Route path="/Welcome" component={Welcome} />
+          {/* <Route path="/Welcome" component={Welcome} />
           <Route path="/Work" component={Work} />
           <Route path="/About" component={About} />
-          <Route path="*" component={Welcome} />
+          <Route path="*" component={Welcome} /> */}
           <FullPage />
         </Switch>
       </div>
