@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import ReactFullpage from '@fullpage/react-fullpage';
 import Welcome from './components/Welcome';
 import About from './components/About';
-import Contact from './components/Contact'
+import Work from './components/Work'
 import NavBar from './components/NavBar';
 
 const Fullpage = () => (
@@ -14,7 +14,7 @@ const Fullpage = () => (
     // API KEY
      licenseKey={'SCROLL_KEY'}
     // the page names in the url set as #
-    anchors={['Welcome', 'Main', 'Contact']}
+    anchors={['Welcome', 'Main', 'Work']}
     // navigation dots on the right
     navigation
     scrollingSpeed = {700}
@@ -38,7 +38,7 @@ const Fullpage = () => (
             </div>
             <div className="section">
               <Router>
-                <Contact />
+                <Work />
               </Router>
             </div>
           </ReactFullpage.Wrapper>
