@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
 import ReactFullpage from '@fullpage/react-fullpage';
 import Welcome from '../components/Welcome';
 import About from '../components/About';
@@ -10,16 +11,12 @@ const SECTION_SEL = `.${SEL}`;
 
 class FullPage extends React.Component {
 
-  moveSectionDown() {
-    fullpage_api.moveSectionDown(); 
-  }
-
   constructor(props) {
     super();
     this.state = {
       fullpages: [
         {
-          page: <Welcome fullpage_api={props.fullpage_api}/>
+          page: <Welcome />
           
         },
         {
@@ -53,13 +50,22 @@ class FullPage extends React.Component {
           // Scroll speed
           scrollingSpeed = {700}
 
-          render={comp => (
+          render={({state, fullpageApi}) => (
             <ReactFullpage.Wrapper>
-              {fullpages.map(({page}) => (
+              {/* {fullpages.map(({page}) => (
                 <div className={SEL}>
                   <div className="fullPageBody">{page}</div>
                 </div>
-              ))}
+              ))} */}
+              <div className="section">
+                <Welcome />
+              </div>
+              <div className="section">
+                <About />
+              </div>
+              <div className="section">
+                <Contact />
+              </div>
             </ReactFullpage.Wrapper>
           )}
         />
@@ -68,4 +74,5 @@ class FullPage extends React.Component {
   }
 }
 
+ReactDOM.render(<FullPage />, document.getElementById('react-root'))
 export default FullPage

@@ -14,7 +14,7 @@ const Welcome = (props) => {
                         <br></br>
                         <div className="hover"> Please make yourself at home. </div>
                         <div>
-                            <button className="enterButton" onClick={() => this.props.fullpage_api.moveSectionDown()}>Enter</button>
+                            <button className="enterButton" onClick={() => props.fullpageApi.moveSectionDown()}>Enter</button>
                         </div>
                     </p>
                 </div>
