@@ -13,7 +13,7 @@ const Work = (props) => {
             <a href="https://github.com/thleigh/FoodFuse" target="_blank">Github Repository</a>
 
             <a href="" target="_blank">The Mcdonalds Project</a>
-            <a href="https://github.com/thleigh/FoodFuse" target="_blank">Github Repository</a>
+            <a href="https://github.com/thleigh/The_Big_Mac_Front_End" target="_blank">Github Repository</a>
 
         </div>
     )
