@@ -7,6 +7,8 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Welcome from './components/Welcome';
 import About from './components/About';
 import Contact from './components/Contact'
+import NavBar from './components/NavBar';
+
 
 const Fullpage = () => (
   <ReactFullpage
@@ -20,23 +22,28 @@ const Fullpage = () => (
 
     render={({ state, fullpageApi }) => {
       return (
-        <ReactFullpage.Wrapper>
-          <div className="section">
-            <Router>
-              <Welcome props={fullpageApi}/>
-            </Router>
-          </div>
-          <div className="section">
-            <Router>
-              <About />
-            </Router>
-          </div>
-          <div className="section">
-            <Router>
-              <Contact />
-            </Router>
-          </div>
-        </ReactFullpage.Wrapper>
+        <>
+          <Router>
+            <NavBar />
+          </Router>
+          <ReactFullpage.Wrapper>
+            <div className="section">
+              <Router>
+                <Welcome props={fullpageApi}/>
+              </Router>
+            </div>
+            <div className="section">
+              <Router>
+                <About />
+              </Router>
+            </div>
+            <div className="section">
+              <Router>
+                <Contact />
+              </Router>
+            </div>
+          </ReactFullpage.Wrapper>
+        </>
       );
     }}
   />

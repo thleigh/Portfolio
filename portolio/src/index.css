@@ -14,9 +14,17 @@ a {
   position: fixed;
 }
 
+.section {
+  z-index: -1;
+}
+
 .container {
   top: 20px;
   position: fixed;
+}
+
+.logo {
+  z-index: -5;
 }
 
 .profilePic {
@@ -32,7 +40,7 @@ a {
 
 .about {
   text-align: center;
-  margin-top: 20%;
+  margin-top: -20px;
   padding: 70px;
 }
 
