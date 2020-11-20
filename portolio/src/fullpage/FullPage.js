@@ -52,11 +52,7 @@ class FullPage extends React.Component {
 
           render={({state, fullpageApi}) => (
             <ReactFullpage.Wrapper>
-              {/* {fullpages.map(({page}) => (
-                <div className={SEL}>
-                  <div className="fullPageBody">{page}</div>
-                </div>
-              ))} */}
+
               <div className="section">
                 <Welcome />
               </div>
@@ -74,5 +70,5 @@ class FullPage extends React.Component {
   }
 }
 
-ReactDOM.render(<FullPage />, document.getElementById('react-root'))
+ReactDOM.render(<FullPage />, document.getElementById('root'))
 export default FullPage
