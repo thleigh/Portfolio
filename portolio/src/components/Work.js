@@ -1,4 +1,8 @@
 import React from 'react';
+import Affirmations from '../assets/affirmationslogo.png'
+import TBMP from '../assets/tbmplogo.png'
+import Upnext from '../assets/upnextlogo.png'
+import Foodfuse from '../assets/foodfuselogo.png'
 
 const Work = (props) => {
 
@@ -6,20 +10,40 @@ const Work = (props) => {
         <div>
             <div className="workGrid">   
                 <div className="box">
-                    <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations</a>
-                    <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank">Github Repository</a>
+                    <p>
+                        <img className="workLogo" src={Affirmations} width="100px"/>
+                    </p>
+                    <div className="workLinks">
+                        <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations </a>
+                        <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank"> Github</a>
+                    </div>
                 </div>
                 <div className="box">
-                    <a href="http://upnext-app.herokuapp.com/" rel="noreferrer" target="_blank">Upnext</a>
-                    <a href="https://github.com/thleigh/upnext" rel="noreferrer" target="_blank">Github Repository</a>
+                    <p>
+                        <img className="workLogo" src={TBMP} width="90px"/>
+                    </p>
+                    <div className="workLinks">
+                        <a href="" target="_blank">TMP </a>
+                        <a href="https://github.com/thleigh/The_Big_Mac_Front_End" rel="noreferrer" target="_blank"> Github</a>
+                    </div>
                 </div>
                 <div className="box">
-                    <a href="https://foodfuse.herokuapp.com/" rel="noreferrer" target="_blank">FoodFuse</a>
-                    <a href="https://github.com/thleigh/FoodFuse" rel="noreferrer" target="_blank">Github Repository</a>
+                    <p>
+                        <img className="workLogo" src={Upnext} width="110px"/>
+                    </p>
+                    <div className="workLinks">
+                        <a href="http://upnext-app.herokuapp.com/" rel="noreferrer" target="_blank">Upnext </a>
+                        <a href="https://github.com/thleigh/upnext" rel="noreferrer" target="_blank"> Github</a>
+                    </div>
                 </div>
                 <div className="box">
-                    <a href="" target="_blank">The Mcdonalds Project</a>
-                    <a href="https://github.com/thleigh/The_Big_Mac_Front_End" rel="noreferrer" target="_blank">Github Repository</a>
+                    <p>
+                        <img className="workLogo" src={Foodfuse} width="130px"/>
+                    </p>
+                    <div className="workLinks">
+                        <a href="https://foodfuse.herokuapp.com/" rel="noreferrer" target="_blank">FoodFuse </a>
+                        <a href="https://github.com/thleigh/FoodFuse" rel="noreferrer" target="_blank"> Github</a>
+                    </div>
                 </div>
             </div>
         </div>

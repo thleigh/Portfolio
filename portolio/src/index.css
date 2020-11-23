@@ -98,21 +98,19 @@ a {
 
 .workGrid{
   margin: 20px auto;
-  width:400px;
-  height:400px;
-  background-color:#fff;
+  width: 500px;
+  height: 400px;
   display:grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 250px 250px;
   grid-row: auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
 
 .box{
-  background-color:#333;
-  padding:20px;
+  /* background-color: white; */
   border-radius:10px;
-  color:#fff;
+  border: 1px solid black;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -123,4 +121,19 @@ a {
   padding: 5px;
   width: 80px;
   font-size: 14px;
+}
+
+.workLinks {
+  position: absolute;
+  margin-top: 120px;
+}
+
+.workLinks a{
+  padding: 3px;
+  color: black;
+  text-decoration: none;
+}
+
+.workLogo {
+  margin-top: -20px;
 }

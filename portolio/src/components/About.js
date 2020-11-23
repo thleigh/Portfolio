@@ -14,6 +14,7 @@ const About = ({fullpageApi}) => {
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
+            dialogClassName="modal-90w"
           >
             <Modal.Header closeButton>
               <Modal.Title id="contained-modal-title-vcenter">
@@ -21,9 +22,7 @@ const About = ({fullpageApi}) => {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <p className="aboutResume">
-                <embed src={ Resume } width="800px"/>
-            </p>
+                <embed className="resume" src={ Resume } width="700px" height="700px"/>
             </Modal.Body>
             <Modal.Footer>
                 <button className="nav-link text-dark myBtn" >Download</button>
