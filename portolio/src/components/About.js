@@ -1,8 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';\
 import { Link } from 'react-router-dom';
 import me from '../assets/tanner2.png';
+import { Button, Modal } from 'react-bootstrap'
 
-const Dbout = ({fullpageApi}) => {
+const About = ({fullpageApi}) => {
+    let [modalState, setModalState] = React.useState(false);
+
+    function StateModal(props) {
+        return (
+          <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="contained-modal-title-vcenter">
+               { state }
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+            <p className="aboutParagraph">
+                { state } data.
+            </p>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button className="btn-info" onClick={props.onHide}>Close</Button>
+            </Modal.Footer>
+          </Modal>
+        );
+      }
     return (
         <div>
             <div className="aboutMain">
@@ -29,6 +56,10 @@ const Dbout = ({fullpageApi}) => {
                         <Link className="nav-link text-dark" to="/about">
                             <button>Contact</button>
                         </Link>
+                        <StateModal
+                            show={modalState}
+                            onHide={() => setModalState(false)}
+                        />
                     </div>
                 </div>
             </div>
@@ -36,4 +67,4 @@ const Dbout = ({fullpageApi}) => {
     )
 }
 
-export default Dbout
+export default About
