@@ -48,9 +48,19 @@ a {
   padding: 20px 30px 10px 30px;
 }
 
+.aboutLinks {
+  width: 100px;
+  margin: 10px auto;
+  border: none;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+}
+
 .aboutMain {
   background: rgb(214, 210, 196, 0.5%);
   box-shadow: 3px 3px 5px 0.2px;
+  border-radius: 10px;
   width: 600px;
   height: 600px;
   margin: 0 auto;
@@ -87,7 +97,6 @@ a {
 } */
 
 .enterButton {
-  cursor: crosshair;
   width: 210px;
   margin-top: 26px;
   border: none;
@@ -108,16 +117,17 @@ a {
 }
 
 .box{
-  /* background-color: white; */
-  border-radius:10px;
-  border: 1px solid black;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  background-color: rgb(214, 210, 196, 1%);
+  border-radius: 10px;
+  /* border: 1px solid black;*/
+  box-shadow: 3px 3px 5px 0.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .myBtn {
-  align-items:center;
+  align-items: center;
   padding: 5px;
   width: 80px;
   font-size: 14px;

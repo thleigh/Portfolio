@@ -47,22 +47,18 @@ const About = ({fullpageApi}) => {
                             functional but beautiful. 
                             You can always count on me to bring people together to go above and beyond.
                         </p>
+                        
+                        <div className="aboutLinksContainer">
+                            <button className="nav-link aboutLinks" onClick={() => fullpageApi.moveSectionDown()}>Work</button>
+                            <button className="nav-link aboutLinks" onClick={() => setModalResume(true)}> Resume </button>
 
-                        <Link className="nav-link text-dark">
-                            <button onClick={() => fullpageApi.moveSectionDown()}>Work</button>
-                        </Link>
-                        <Link className="nav-link text-dark">
-                            <button onClick={() => setModalResume(true)}> Resume </button>
-                        </Link>
+                            <ResumeModal
+                                show={modalResume}
+                                onHide={() => setModalResume(false)}
+                            />
 
-                        <ResumeModal
-                            show={modalResume}
-                            onHide={() => setModalResume(false)}
-                        />
-
-                        <Link className="nav-link text-dark" to="/about">
-                            <button>Contact</button>
-                        </Link>
+                            <button className="nav-link aboutLinks">Contact</button>
+                        </div>
                     </div>
                 </div>
             </div>
