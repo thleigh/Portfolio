@@ -11,7 +11,7 @@ const Work = (props) => {
             <div className="workGrid">   
                 <div className="box">
                     <p>
-                        <img className="workLogo" src={Affirmations} width="100px"/>
+                        <img className="workLogo" alt="affirmations" src={Affirmations} width="100px"/>
                     </p>
                     <div className="workLinks">
                         <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations </a>
@@ -20,16 +20,16 @@ const Work = (props) => {
                 </div>
                 <div className="box">
                     <p>
-                        <img className="workLogo" src={TBMP} width="90px"/>
+                        <img className="workLogo tbmplogo" alt="the big mac project" src={TBMP} width="90px"/>
                     </p>
                     <div className="workLinks">
-                        <a href="" target="_blank">TMP </a>
+                        <a href="" target="_blank">TBMP </a>
                         <a href="https://github.com/thleigh/The_Big_Mac_Front_End" rel="noreferrer" target="_blank"> Github</a>
                     </div>
                 </div>
                 <div className="box">
                     <p>
-                        <img className="workLogo" src={Upnext} width="110px"/>
+                        <img className="workLogo upnextlogo" alt="upnext" src={Upnext} width="110px"/>
                     </p>
                     <div className="workLinks">
                         <a href="http://upnext-app.herokuapp.com/" rel="noreferrer" target="_blank">Upnext </a>
@@ -38,7 +38,7 @@ const Work = (props) => {
                 </div>
                 <div className="box">
                     <p>
-                        <img className="workLogo" src={Foodfuse} width="130px"/>
+                        <img className="workLogo" alt="Foodfuse" src={Foodfuse} width="130px"/>
                     </p>
                     <div className="workLinks">
                         <a href="https://foodfuse.herokuapp.com/" rel="noreferrer" target="_blank">FoodFuse </a>
