@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import me from '../assets/tanner2.png';
-import { Button, Modal } from 'react-bootstrap'
+import { Modal } from 'react-bootstrap'
 
 const About = ({fullpageApi}) => {
     let [modalResume, setModalResume] = React.useState(false);
@@ -25,7 +25,8 @@ const About = ({fullpageApi}) => {
             </p>
             </Modal.Body>
             <Modal.Footer>
-              <Button className="btn-info" onClick={props.onHide}>Close</Button>
+                <button className="nav-link text-dark" >Download</button>
+                <button className="nav-link text-dark" onClick={props.onHide}>Close</button>
             </Modal.Footer>
           </Modal>
         );
@@ -50,9 +51,10 @@ const About = ({fullpageApi}) => {
                         <Link className="nav-link text-dark">
                             <button onClick={() => fullpageApi.moveSectionDown()}>Work</button>
                         </Link>
+                        <Link className="nav-link text-dark">
+                            <button onClick={() => setModalResume(true)}> Resume </button>
+                        </Link>
 
-                        <Button className="nav-link text-dark" onClick={() => setModalResume(true)}> Resume </Button>
-                        
                         <ResumeModal
                             show={modalResume}
                             onHide={() => setModalResume(false)}
