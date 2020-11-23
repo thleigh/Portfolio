@@ -79,21 +79,23 @@ const About = ({fullpageApi}) => {
                             You can always count on me to bring people together to go above and beyond.
                         </p>
                         
-                        <div className="aboutLinksContainer">
-                            <button className="nav-link aboutLinks" onClick={() => fullpageApi.moveSectionDown()}>Work</button>
-                            <button className="nav-link aboutLinks" onClick={() => setModalResume(true)}> Resume </button>
+                        <div className="aboutLinksContainerContainer">
+                            <div className="aboutLinksContainer">
+                                <button className="nav-link aboutLinks" onClick={() => fullpageApi.moveSectionDown()}>Work</button>
+                                <button className="nav-link aboutLinks" onClick={() => setModalResume(true)}> Resume </button>
 
-                            <ResumeModal
-                                show={modalResume}
-                                onHide={() => setModalResume(false)}
-                            />
+                                <ResumeModal
+                                    show={modalResume}
+                                    onHide={() => setModalResume(false)}
+                                />
 
-                            <button className="nav-link aboutLinks" onClick={() => setModalContact(true)}>Contact</button>
+                                <button className="nav-link aboutLinks" onClick={() => setModalContact(true)}>Contact</button>
 
-                            <ContactModal
-                                show={modalContact}
-                                onHide={() => setModalContact(false)}
-                            />
+                                <ContactModal
+                                    show={modalContact}
+                                    onHide={() => setModalContact(false)}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
