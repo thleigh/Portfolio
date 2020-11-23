@@ -22,7 +22,7 @@ const About = ({fullpageApi}) => {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <embed className="resume" src={ Resume } width="700px" height="700px"/>
+                <embed className="resume" src={ Resume } width="765px" height="600px"/>
             </Modal.Body>
             <Modal.Footer>
                 <button className="nav-link text-dark myBtn" >Download</button>

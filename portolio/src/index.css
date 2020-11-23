@@ -50,6 +50,7 @@ a {
 
 .aboutLinks {
   width: 100px;
+  height: 40px;
   margin: 10px auto;
   border: none;
   background-color: black;
@@ -60,7 +61,7 @@ a {
 .aboutMain {
   background: rgb(214, 210, 196, 0.5%);
   box-shadow: 3px 3px 5px 0.2px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 600px;
   height: 600px;
   margin: 0 auto;
@@ -118,7 +119,7 @@ a {
 
 .box{
   background-color: rgb(214, 210, 196, 1%);
-  border-radius: 10px;
+  border-radius: 5px;
   /* border: 1px solid black;*/
   box-shadow: 3px 3px 5px 0.2px;
   display: flex;
