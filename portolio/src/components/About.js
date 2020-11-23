@@ -1,12 +1,12 @@
-import React, { useState } from 'react';\
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import me from '../assets/tanner2.png';
 import { Button, Modal } from 'react-bootstrap'
 
 const About = ({fullpageApi}) => {
-    let [modalState, setModalState] = React.useState(false);
+    let [modalResume, setModalResume] = React.useState(false);
 
-    function StateModal(props) {
+    function ResumeModal(props) {
         return (
           <Modal
             {...props}
@@ -16,12 +16,12 @@ const About = ({fullpageApi}) => {
           >
             <Modal.Header closeButton>
               <Modal.Title id="contained-modal-title-vcenter">
-               { state }
+               Resume
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
             <p className="aboutParagraph">
-                { state } data.
+                resume image
             </p>
             </Modal.Body>
             <Modal.Footer>
@@ -50,16 +50,17 @@ const About = ({fullpageApi}) => {
                         <Link className="nav-link text-dark">
                             <button onClick={() => fullpageApi.moveSectionDown()}>Work</button>
                         </Link>
-                        <Link className="nav-link text-dark" to="/Resume">
-                            <button>Resume</button>
-                        </Link>
+
+                        <Button className="nav-link text-dark" onClick={() => setModalResume(true)}> Resume </Button>
+                        
+                        <ResumeModal
+                            show={modalResume}
+                            onHide={() => setModalResume(false)}
+                        />
+
                         <Link className="nav-link text-dark" to="/about">
                             <button>Contact</button>
                         </Link>
-                        <StateModal
-                            show={modalState}
-                            onHide={() => setModalState(false)}
-                        />
                     </div>
                 </div>
             </div>
