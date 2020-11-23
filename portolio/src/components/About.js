@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import me from '../assets/tanner2.png';
 import { Modal } from 'react-bootstrap'
 import Resume from '../assets/Resume.pdf'
 
 const About = ({fullpageApi}) => {
     let [modalResume, setModalResume] = React.useState(false);
+    let [modalContact, setModalContact] = React.useState(false);
+
 
     function ResumeModal(props) {
         return (
@@ -25,12 +26,42 @@ const About = ({fullpageApi}) => {
                 <embed className="resume" src={ Resume } width="765px" height="600px"/>
             </Modal.Body>
             <Modal.Footer>
-                <button className="nav-link text-dark myBtn" >Download</button>
+                <a href={ Resume } download="Tanner_Leigh_Resume">
+                    <button className="nav-link text-dark myBtn">Download</button>
+                </a>
                 <button className="nav-link text-dark myBtn" onClick={ props.onHide }>Close</button>
             </Modal.Footer>
           </Modal>
         );
-      }
+    }
+
+    function ContactModal(props) {
+        return (
+          <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+            dialogClassName="modal-90w"
+          >
+            <Modal.Header closeButton>
+              <Modal.Title id="contained-modal-title-vcenter">
+               Contact
+              </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                Linkedin
+                Github
+                Email
+                Phone Number
+            </Modal.Body>
+            <Modal.Footer>
+                <button className="nav-link text-dark myBtn" onClick={ props.onHide }>Close</button>
+            </Modal.Footer>
+          </Modal>
+        );
+    }
+
     return (
         <div>
             <div className="aboutMain">
@@ -57,7 +88,12 @@ const About = ({fullpageApi}) => {
                                 onHide={() => setModalResume(false)}
                             />
 
-                            <button className="nav-link aboutLinks">Contact</button>
+                            <button className="nav-link aboutLinks" onClick={() => setModalContact(true)}>Contact</button>
+
+                            <ContactModal
+                                show={modalContact}
+                                onHide={() => setModalContact(false)}
+                            />
                         </div>
                     </div>
                 </div>
