@@ -4,6 +4,10 @@ body {
   background: rgb(214, 210, 196, 10%);
 }
 
+* {
+  cursor: crosshair;
+}
+
 a {
   cursor: crosshair;
 }
@@ -112,4 +116,11 @@ a {
   display:flex;
   align-items:center;
   justify-content:center;
+}
+
+.myBtn {
+  align-items:center;
+  padding: 5px;
+  width: 80px;
+  font-size: 14px;
 }

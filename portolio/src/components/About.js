@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import me from '../assets/tanner2.png';
 import { Modal } from 'react-bootstrap'
+import Resume from '../assets/Resume.pdf'
 
 const About = ({fullpageApi}) => {
     let [modalResume, setModalResume] = React.useState(false);
@@ -20,13 +21,13 @@ const About = ({fullpageApi}) => {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <p className="aboutParagraph">
-                resume image
+            <p className="aboutResume">
+                <embed src={ Resume } width="800px"/>
             </p>
             </Modal.Body>
             <Modal.Footer>
-                <button className="nav-link text-dark" >Download</button>
-                <button className="nav-link text-dark" onClick={props.onHide}>Close</button>
+                <button className="nav-link text-dark myBtn" >Download</button>
+                <button className="nav-link text-dark myBtn" onClick={ props.onHide }>Close</button>
             </Modal.Footer>
           </Modal>
         );
