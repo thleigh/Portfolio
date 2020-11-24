@@ -50,10 +50,15 @@ const About = ({fullpageApi}) => {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                Linkedin
-                Github
-                Email
-                Phone Number
+                <div className="contactContainer">
+                    <p>
+                        <a className="contactLinks" href="https://www.linkedin.com/in/tannerhleigh/" target="_blank">Linkedin</a>
+                    </p>
+                    <p>
+                        <a className="contactLinks" href="https://github.com/thleigh" target="_blank">Github</a>
+                    </p>
+                    <p>Tannerhleigh@gmail.com</p>
+                </div>
             </Modal.Body>
             <Modal.Footer>
                 <button className="nav-link text-dark myBtn" onClick={ props.onHide }>Close</button>

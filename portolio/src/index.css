@@ -165,3 +165,12 @@ a {
   margin-left: 20px;
   transform: rotate(15deg);
 }
+
+.contactLinks {
+  text-decoration: none;
+  color: black;
+}
+
+.contactContainer {
+  text-align: center;
+}
