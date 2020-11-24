@@ -52,10 +52,10 @@ const About = ({fullpageApi}) => {
             <Modal.Body>
                 <div className="contactContainer">
                     <p>
-                        <a className="contactLinks" href="https://www.linkedin.com/in/tannerhleigh/" target="_blank">Linkedin</a>
+                        <a className="contactLinks" href="https://www.linkedin.com/in/tannerhleigh/" target="_blank" rel="noreferrer">Linkedin</a>
                     </p>
                     <p>
-                        <a className="contactLinks" href="https://github.com/thleigh" target="_blank">Github</a>
+                        <a className="contactLinks" href="https://github.com/thleigh" target="_blank" rel="noreferrer">Github</a>
                     </p>
                     <p>Tannerhleigh@gmail.com</p>
                 </div>
