@@ -31,16 +31,16 @@ const Work = (props) => {
     };
     const open = Boolean(AffirmationsPop);
 
-    // Affirmations Popover
-    const [AffirmationsPop, setAffirmationsPop] = React.useState(null);
-    const handleAffirmationsPop = (event) => {
-        setAffirmationsPop(event.currentTarget);
+    // TBMP Popover
+    const [TBMPPop, setTBMPPop] = React.useState(null);
+    const handleTBMPPop = (event) => {
+        setTBMPPop(event.currentTarget);
       };
     
-    const handleAffirmationsPopClose = () => {
-     setAffirmationsPop(null);
+    const handleTBMPPopClose = () => {
+     setTBMPPop(null);
     };
-    const open = Boolean(AffirmationsPop);
+    const open = Boolean(TBMPPop);
 
     // Affirmations Popover
     const [AffirmationsPop, setAffirmationsPop] = React.useState(null);
@@ -52,17 +52,17 @@ const Work = (props) => {
      setAffirmationsPop(null);
     };
     const open = Boolean(AffirmationsPop);
-    
-    // Affirmations Popover
-    const [AffirmationsPop, setAffirmationsPop] = React.useState(null);
-    const handleAffirmationsPop = (event) => {
-        setAffirmationsPop(event.currentTarget);
+
+    // Upnext Popover
+    const [UpnextPop, setUpnextPop] = React.useState(null);
+    const handleUpnextPop = (event) => {
+        setUpnextPop(event.currentTarget);
       };
     
-    const handleAffirmationsPopClose = () => {
-     setAffirmationsPop(null);
+    const handleUpnextPopClose = () => {
+     setUpnextPop(null);
     };
-    const open = Boolean(AffirmationsPop);
+    const open = Boolean(UpnextPop);
 
     return (
         <div>
@@ -117,8 +117,8 @@ const Work = (props) => {
                         <Typography
                             aria-owns={open ? 'mouse-over-popover' : undefined}
                             aria-haspopup="true"
-                            onMouseEnter={handlePopoverOpen}
-                            onMouseLeave={handlePopoverClose}
+                            onMouseEnter={handleTBMPPop}
+                            onMouseLeave={handleTBMPPopClose}
                         >
                             <img className="workLogo tbmplogo" alt="the big mac project" src={TBMP} width="90px"/>
                         </Typography>
@@ -130,7 +130,7 @@ const Work = (props) => {
                                 paper: classes.paper,
                                 }}
                                 open={open}
-                                anchorEl={anchorEl}
+                                TBMPPop={TBMPPop}
                                 anchorOrigin={{
                                 vertical: 'top',
                                 horizontal: 'left',
@@ -139,7 +139,7 @@ const Work = (props) => {
                                 vertical: 'top',
                                 horizontal: 'left',
                                 }}
-                                onClose={handlePopoverClose}
+                                onClose={handleTBMPPopClose}
                                 disableRestoreFocus
                             >
                                 <Typography>I use Popover.</Typography>
@@ -156,8 +156,8 @@ const Work = (props) => {
                         <Typography
                             aria-owns={open ? 'mouse-over-popover' : undefined}
                             aria-haspopup="true"
-                            onMouseEnter={handlePopoverOpen}
-                            onMouseLeave={handlePopoverClose}
+                            onMouseEnter={handleUpnextPop}
+                            onMouseLeave={handleUpnextPopClose}
                         >
                             <img className="workLogo upnextlogo" alt="upnext" src={Upnext} width="110px"/>
                         </Typography>
@@ -169,7 +169,7 @@ const Work = (props) => {
                                 paper: classes.paper,
                                 }}
                                 open={open}
-                                anchorEl={anchorEl}
+                                UpnextPop={UpnextPop}
                                 anchorOrigin={{
                                 vertical: 'top',
                                 horizontal: 'left',
@@ -178,7 +178,7 @@ const Work = (props) => {
                                 vertical: 'top',
                                 horizontal: 'left',
                                 }}
-                                onClose={handlePopoverClose}
+                                onClose={handleUpnextPopClose}
                                 disableRestoreFocus
                             >
                                 <Typography>I use Popover.</Typography>
