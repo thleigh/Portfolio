@@ -29,7 +29,7 @@ const Work = (props) => {
     const handleAffirmationsPopClose = () => {
      setAffirmationsPop(null);
     };
-    const open = Boolean(AffirmationsPop);
+    const openAffirmations = Boolean(AffirmationsPop);
 
     // TBMP Popover
     const [TBMPPop, setTBMPPop] = React.useState(null);
@@ -40,7 +40,7 @@ const Work = (props) => {
     const handleTBMPPopClose = () => {
      setTBMPPop(null);
     };
-    const open = Boolean(TBMPPop);
+    const openTBMP = Boolean(TBMPPop);
 
     // Foodfuse Popover
     const [FoodfusePop, setFoodfusePop] = React.useState(null);
@@ -51,7 +51,7 @@ const Work = (props) => {
     const handleFoodfusePopClose = () => {
      setFoodfusePop(null);
     };
-    const open = Boolean(FoodfusePop);
+    const openFoodfusePop = Boolean(FoodfusePop);
 
     // Upnext Popover
     const [UpnextPop, setUpnextPop] = React.useState(null);
@@ -62,7 +62,7 @@ const Work = (props) => {
     const handleUpnextPopClose = () => {
      setUpnextPop(null);
     };
-    const open = Boolean(UpnextPop);
+    const openUpnext = Boolean(UpnextPop);
 
     return (
         <div>
