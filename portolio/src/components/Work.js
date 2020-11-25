@@ -19,16 +19,51 @@ const Work = (props) => {
     }));
 
     const classes = useStyles();
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const handlePopoverOpen = (event) => {
-        setAnchorEl(event.currentTarget);
+
+    // Affirmations Popover
+    const [AffirmationsPop, setAffirmationsPop] = React.useState(null);
+    const handleAffirmationsPop = (event) => {
+        setAffirmationsPop(event.currentTarget);
       };
     
-    const handlePopoverClose = () => {
-     setAnchorEl(null);
+    const handleAffirmationsPopClose = () => {
+     setAffirmationsPop(null);
     };
+    const open = Boolean(AffirmationsPop);
+
+    // Affirmations Popover
+    const [AffirmationsPop, setAffirmationsPop] = React.useState(null);
+    const handleAffirmationsPop = (event) => {
+        setAffirmationsPop(event.currentTarget);
+      };
     
-      const open = Boolean(anchorEl);
+    const handleAffirmationsPopClose = () => {
+     setAffirmationsPop(null);
+    };
+    const open = Boolean(AffirmationsPop);
+
+    // Affirmations Popover
+    const [AffirmationsPop, setAffirmationsPop] = React.useState(null);
+    const handleAffirmationsPop = (event) => {
+        setAffirmationsPop(event.currentTarget);
+      };
+    
+    const handleAffirmationsPopClose = () => {
+     setAffirmationsPop(null);
+    };
+    const open = Boolean(AffirmationsPop);
+    
+    // Affirmations Popover
+    const [AffirmationsPop, setAffirmationsPop] = React.useState(null);
+    const handleAffirmationsPop = (event) => {
+        setAffirmationsPop(event.currentTarget);
+      };
+    
+    const handleAffirmationsPopClose = () => {
+     setAffirmationsPop(null);
+    };
+    const open = Boolean(AffirmationsPop);
+
     return (
         <div>
             <div className="workGrid">   
@@ -37,8 +72,8 @@ const Work = (props) => {
                         <Typography
                             aria-owns={open ? 'mouse-over-popover' : undefined}
                             aria-haspopup="true"
-                            onMouseEnter={handlePopoverOpen}
-                            onMouseLeave={handlePopoverClose}
+                            onMouseEnter={handleAffirmationsPop}
+                            onMouseLeave={handleAffirmationsPopClose}
                         >
                             <img className="workLogo" alt="affirmations" src={Affirmations} width="100px"/>
                         </Typography>
@@ -50,7 +85,7 @@ const Work = (props) => {
                                 paper: classes.paper,
                                 }}
                                 open={open}
-                                anchorEl={anchorEl}
+                                AffirmationsPop={AffirmationsPop}
                                 anchorOrigin={{
                                 vertical: 'top',
                                 horizontal: 'left',
@@ -62,7 +97,13 @@ const Work = (props) => {
                                 onClose={handlePopoverClose}
                                 disableRestoreFocus
                             >
-                                <Typography>I use Popover.</Typography>
+                                <Typography>
+                                    Affirmations is a suicide prevention website built with 
+                                    <br></br>
+                                    the intention to affirm users and provide them
+                                    <br></br>
+                                    with the proper resources to find local professionals or volunteers.
+                                </Typography>
                             </Popover>
                         </div>
                     </p>
