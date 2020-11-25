@@ -42,16 +42,16 @@ const Work = (props) => {
     };
     const open = Boolean(TBMPPop);
 
-    // Affirmations Popover
-    const [AffirmationsPop, setAffirmationsPop] = React.useState(null);
-    const handleAffirmationsPop = (event) => {
-        setAffirmationsPop(event.currentTarget);
+    // Foodfuse Popover
+    const [FoodfusePop, setFoodfusePop] = React.useState(null);
+    const handleFoodfusePop = (event) => {
+        setFoodfusePop(event.currentTarget);
       };
     
-    const handleAffirmationsPopClose = () => {
-     setAffirmationsPop(null);
+    const handleFoodfusePopClose = () => {
+     setFoodfusePop(null);
     };
-    const open = Boolean(AffirmationsPop);
+    const open = Boolean(FoodfusePop);
 
     // Upnext Popover
     const [UpnextPop, setUpnextPop] = React.useState(null);
@@ -195,8 +195,8 @@ const Work = (props) => {
                         <Typography
                             aria-owns={open ? 'mouse-over-popover' : undefined}
                             aria-haspopup="true"
-                            onMouseEnter={handlePopoverOpen}
-                            onMouseLeave={handlePopoverClose}
+                            onMouseEnter={handleFoodfusePop}
+                            onMouseLeave={handleFoodfusePopClose}
                         >
                             <img className="workLogo" alt="Foodfuse" src={Foodfuse} width="130px"/>
                         </Typography>
@@ -208,7 +208,7 @@ const Work = (props) => {
                                 paper: classes.paper,
                                 }}
                                 open={open}
-                                anchorEl={anchorEl}
+                                FoodfusePop={FoodfusePop}
                                 anchorOrigin={{
                                 vertical: 'top',
                                 horizontal: 'left',
@@ -217,7 +217,7 @@ const Work = (props) => {
                                 vertical: 'top',
                                 horizontal: 'left',
                                 }}
-                                onClose={handlePopoverClose}
+                                onClose={handleFoodfusePopClose}
                                 disableRestoreFocus
                             >
                                 <Typography>I use Popover.</Typography>
