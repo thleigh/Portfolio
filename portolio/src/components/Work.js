@@ -51,7 +51,7 @@ const Work = (props) => {
     const handleFoodfusePopClose = () => {
      setFoodfusePop(null);
     };
-    const openFoodfusePop = Boolean(FoodfusePop);
+    const openFoodfuse = Boolean(FoodfusePop);
 
     // Upnext Popover
     const [UpnextPop, setUpnextPop] = React.useState(null);
@@ -70,7 +70,7 @@ const Work = (props) => {
                 <div className="box">
                     <p>
                         <Typography
-                            aria-owns={open ? 'mouse-over-popover' : undefined}
+                            aria-owns={openAffirmations ? 'mouse-over-popover' : undefined}
                             aria-haspopup="true"
                             onMouseEnter={handleAffirmationsPop}
                             onMouseLeave={handleAffirmationsPopClose}
@@ -84,7 +84,7 @@ const Work = (props) => {
                                 classes={{
                                 paper: classes.paper,
                                 }}
-                                open={open}
+                                openAffirmations={openAffirmations}
                                 AffirmationsPop={AffirmationsPop}
                                 anchorOrigin={{
                                 vertical: 'top',
@@ -94,7 +94,7 @@ const Work = (props) => {
                                 vertical: 'top',
                                 horizontal: 'left',
                                 }}
-                                onClose={handlePopoverClose}
+                                onClose={handleAffirmationsPopClose}
                                 disableRestoreFocus
                             >
                                 <Typography>
@@ -115,7 +115,7 @@ const Work = (props) => {
                 <div className="box">
                     <p>
                         <Typography
-                            aria-owns={open ? 'mouse-over-popover' : undefined}
+                            aria-owns={openTBMP ? 'mouse-over-popover' : undefined}
                             aria-haspopup="true"
                             onMouseEnter={handleTBMPPop}
                             onMouseLeave={handleTBMPPopClose}
@@ -129,7 +129,7 @@ const Work = (props) => {
                                 classes={{
                                 paper: classes.paper,
                                 }}
-                                open={open}
+                                openTBMP={openTBMP}
                                 TBMPPop={TBMPPop}
                                 anchorOrigin={{
                                 vertical: 'top',
@@ -154,7 +154,7 @@ const Work = (props) => {
                 <div className="box">
                     <p>
                         <Typography
-                            aria-owns={open ? 'mouse-over-popover' : undefined}
+                            aria-owns={openUpnext ? 'mouse-over-popover' : undefined}
                             aria-haspopup="true"
                             onMouseEnter={handleUpnextPop}
                             onMouseLeave={handleUpnextPopClose}
@@ -168,7 +168,7 @@ const Work = (props) => {
                                 classes={{
                                 paper: classes.paper,
                                 }}
-                                open={open}
+                                openUpnext={openUpnext}
                                 UpnextPop={UpnextPop}
                                 anchorOrigin={{
                                 vertical: 'top',
@@ -193,7 +193,7 @@ const Work = (props) => {
                 <div className="box">
                     <p>
                         <Typography
-                            aria-owns={open ? 'mouse-over-popover' : undefined}
+                            aria-owns={openFoodfuse ? 'mouse-over-popover' : undefined}
                             aria-haspopup="true"
                             onMouseEnter={handleFoodfusePop}
                             onMouseLeave={handleFoodfusePopClose}
@@ -207,7 +207,7 @@ const Work = (props) => {
                                 classes={{
                                 paper: classes.paper,
                                 }}
-                                open={open}
+                                openFoodfuse={openFoodfuse}
                                 FoodfusePop={FoodfusePop}
                                 anchorOrigin={{
                                 vertical: 'top',
