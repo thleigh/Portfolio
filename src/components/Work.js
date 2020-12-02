@@ -17,26 +17,33 @@ const Work = (props) => {
                     </p>
                     <div className="workLinks">
                     <>
-                        {['top', 'right', 'bottom', 'left'].map((placement) => (
+                        {['top'].map((placement) => (
                             <OverlayTrigger
                             trigger="click"
                             key={placement}
                             placement={placement}
                             overlay={
                                 <Popover id={`popover-positioned-${placement}`}>
-                                <Popover.Title as="h3">{`Popover ${placement}`}</Popover.Title>
+                                <Popover.Title as="h3">{`Affirmations App`}</Popover.Title>
                                 <Popover.Content>
-                                    <strong>Holy guacamole!</strong> Check this info.
+                                    <div className="popoverContent">
+                                        <p>
+                                            Affirmations is a website that provides its users with easily accessible suicide prevention resources and
+                                            affirming quotes. Users are able to find local professional help and also have the opportunity to talk to 
+                                            random volunteers. 
+                                        </p>
+                                        <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations Site</a>
+                                        <br></br>
+                                        <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank">Github</a>
+                                    </div>
                                 </Popover.Content>
                                 </Popover>
                             }
                             >
-                            <Button variant="secondary">Popover on {placement}</Button>
+                            <Button variant="secondary">Affirmations</Button>
                             </OverlayTrigger>
                         ))}
                     </>
-                        <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations</a>
-                        <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank"> Github</a>
                     </div>
                 </div>
                 <div className="box">
