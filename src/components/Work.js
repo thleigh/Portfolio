@@ -3,6 +3,8 @@ import Affirmations from '../assets/affirmationslogo.png'
 import TBMP from '../assets/tbmplogo.png'
 import Upnext from '../assets/upnextlogo.png'
 import Foodfuse from '../assets/foodfuselogo.png'
+import { Button, Tooltip, OverlayTrigger, Popover } from 'react-bootstrap'
+
 
 const Work = (props) => {
 
@@ -14,6 +16,25 @@ const Work = (props) => {
                         <img className="workLogo" alt="affirmations" src={Affirmations} width="100px"/>
                     </p>
                     <div className="workLinks">
+                    <>
+                        {['top', 'right', 'bottom', 'left'].map((placement) => (
+                            <OverlayTrigger
+                            trigger="click"
+                            key={placement}
+                            placement={placement}
+                            overlay={
+                                <Popover id={`popover-positioned-${placement}`}>
+                                <Popover.Title as="h3">{`Popover ${placement}`}</Popover.Title>
+                                <Popover.Content>
+                                    <strong>Holy guacamole!</strong> Check this info.
+                                </Popover.Content>
+                                </Popover>
+                            }
+                            >
+                            <Button variant="secondary">Popover on {placement}</Button>
+                            </OverlayTrigger>
+                        ))}
+                    </>
                         <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations</a>
                         <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank"> Github</a>
                     </div>
