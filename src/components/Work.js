@@ -3,7 +3,7 @@ import Affirmations from '../assets/affirmationslogo.png'
 import TBMP from '../assets/tbmplogo.png'
 import Upnext from '../assets/upnextlogo.png'
 import Foodfuse from '../assets/foodfuselogo.png'
-import { Button, Tooltip, OverlayTrigger, Popover } from 'react-bootstrap'
+import { Button, OverlayTrigger, Popover } from 'react-bootstrap'
 
 
 const Work = (props) => {
@@ -87,7 +87,7 @@ const Work = (props) => {
                     </p>
                     <div className="workLinks">
                         <>
-                            {['bottom'].map((placement) => (
+                            {['top'].map((placement) => (
                                 <OverlayTrigger
                                 trigger="click"
                                 key={placement}
@@ -98,10 +98,10 @@ const Work = (props) => {
                                     <Popover.Content>
                                         <div className="popoverContent">
                                             <p>
-                                                TBMP, otherwise known as "The Big Mac Project", finds the price of every Mcdonald's Big Mac meal across the United States and compares them.
-                                                The goal behind The Big Mac Project is to find the relationship between the cost of living between each city and 
-                                                how that effects the price of common goods. 
-                                            </p>
+                                                upnext is a website where users can find out about upcoming show releases, where to buy them, 
+                                                and how to buy them. upnext users will be able to browse older generations of sneakers and 
+                                                interact with other users through community pages that allow them to post pictures, comment, 
+                                                like, and favorite.                                            </p>
                                             <a href="http://upnext-app.herokuapp.com/" rel="noreferrer" target="_blank">Upnext Site</a>
                                             <br></br>
                                             <a href="https://github.com/thleigh/upnext" rel="noreferrer" target="_blank">Github</a>
@@ -122,7 +122,7 @@ const Work = (props) => {
                     </p>
                     <div className="workLinks">
                         <>
-                                {['bottom'].map((placement) => (
+                                {['top'].map((placement) => (
                                     <OverlayTrigger
                                     trigger="click"
                                     key={placement}
@@ -133,9 +133,9 @@ const Work = (props) => {
                                         <Popover.Content>
                                             <div className="popoverContent">
                                                 <p>
-                                                    TBMP, otherwise known as "The Big Mac Project", finds the price of every Mcdonald's Big Mac meal across the United States and compares them.
-                                                    The goal behind The Big Mac Project is to find the relationship between the cost of living between each city and 
-                                                    how that effects the price of common goods. 
+                                                    FoodFuse searches and sorts through the 4 major food delivery apps by the user's location and 
+                                                    returns the restaurant's data. FoodFuse provides the users with a comparison of the delivery 
+                                                    fee's and delivery times between each service so that the user can make an educated choice on which app to use.
                                                 </p>
                                                 <a href="https://foodfuse.herokuapp.com/" rel="noreferrer" target="_blank">FoodFuse Site</a>
                                                 <br></br>
