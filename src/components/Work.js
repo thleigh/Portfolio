@@ -63,7 +63,7 @@ const Work = (props) => {
                                 <Popover.Content>
                                     <div className="popoverContent">
                                         <p>
-                                            The Big Mac Project finds the price of every Mcdonald's Big Mac meal across the United States and compares them.
+                                            TBMP, otherwise known as "The Big Mac Project", finds the price of every Mcdonald's Big Mac meal across the United States and compares them.
                                             The goal behind The Big Mac Project is to find the relationship between the cost of living between each city and 
                                             how that effects the price of common goods. 
                                         </p>
@@ -75,7 +75,7 @@ const Work = (props) => {
                                 </Popover>
                             }
                             >
-                            <Button variant="secondary">Affirmations</Button>
+                            <Button variant="secondary">TBMP</Button>
                             </OverlayTrigger>
                         ))}
                     </>
