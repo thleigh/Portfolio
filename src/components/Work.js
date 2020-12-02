@@ -3,7 +3,7 @@ import Affirmations from '../assets/affirmationslogo.png'
 import TBMP from '../assets/tbmplogo.png'
 import Upnext from '../assets/upnextlogo.png'
 import Foodfuse from '../assets/foodfuselogo.png'
-import { Button, OverlayTrigger, Popover } from 'react-bootstrap'
+import { OverlayTrigger, Popover } from 'react-bootstrap'
 
 
 const Work = (props) => {
@@ -66,6 +66,10 @@ const Work = (props) => {
                                                 TBMP, otherwise known as "The Big Mac Project", finds the price of every Mcdonald's Big Mac meal across the United States and compares them.
                                                 The goal behind The Big Mac Project is to find the relationship between the cost of living between each city and 
                                                 how that effects the price of common goods. 
+                                                <br></br>
+                                                <strong>
+                                                The site is currently down, but will be back up soon.
+                                                </strong>
                                             </p>
                                             <a href="" target="_blank">The Big Mac Project Site</a>
                                             <br></br>
