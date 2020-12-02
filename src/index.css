@@ -113,14 +113,15 @@ a {
 }
 
 .workGrid{
-  margin: 20px auto;
+  margin: -30px auto;
   width: 500px;
-  height: 400px;
+  height: 300px;
   display:grid;
-  grid-template-columns: 250px 250px;
+  grid-template-columns: 250px 250px 250px 250px;
   grid-row: auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
+  justify-content: center;
 }
 
 .box{
