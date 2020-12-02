@@ -121,8 +121,34 @@ const Work = (props) => {
                         <img className="workLogo" alt="Foodfuse" src={Foodfuse} width="130px"/>
                     </p>
                     <div className="workLinks">
-                        {/* <a href="https://foodfuse.herokuapp.com/" rel="noreferrer" target="_blank">FoodFuse </a>
-                        <a href="https://github.com/thleigh/FoodFuse" rel="noreferrer" target="_blank"> Github</a> */}
+                        <>
+                                {['bottom'].map((placement) => (
+                                    <OverlayTrigger
+                                    trigger="click"
+                                    key={placement}
+                                    placement={placement}
+                                    overlay={
+                                        <Popover id={`popover-positioned-${placement}`}>
+                                        <Popover.Title as="h3">{`FoodFuse`}</Popover.Title>
+                                        <Popover.Content>
+                                            <div className="popoverContent">
+                                                <p>
+                                                    TBMP, otherwise known as "The Big Mac Project", finds the price of every Mcdonald's Big Mac meal across the United States and compares them.
+                                                    The goal behind The Big Mac Project is to find the relationship between the cost of living between each city and 
+                                                    how that effects the price of common goods. 
+                                                </p>
+                                                <a href="https://foodfuse.herokuapp.com/" rel="noreferrer" target="_blank">FoodFuse Site</a>
+                                                <br></br>
+                                                <a href="https://github.com/thleigh/FoodFuse" rel="noreferrer" target="_blank"> Github</a>
+                                            </div>
+                                        </Popover.Content>
+                                        </Popover>
+                                    }
+                                    >
+                                    <Button variant="secondary">FoodFuse</Button>
+                                    </OverlayTrigger>
+                                ))}
+                            </>
                     </div>
                 </div>
             </div>
