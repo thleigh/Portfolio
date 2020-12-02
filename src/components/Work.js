@@ -40,7 +40,7 @@ const Work = (props) => {
                                     </Popover>
                                 }
                                 >
-                                <Button variant="secondary">Affirmations</Button>
+                                 <button className="nav-link aboutLinks">Affirmations</button>
                                 </OverlayTrigger>
                             ))}
                         </>
@@ -75,7 +75,7 @@ const Work = (props) => {
                                     </Popover>
                                 }
                                 >
-                                <Button variant="secondary">TBMP</Button>
+                                <button className="nav-link aboutLinks">TBMP</button>
                                 </OverlayTrigger>
                             ))}
                         </>
@@ -110,7 +110,7 @@ const Work = (props) => {
                                     </Popover>
                                 }
                                 >
-                                <Button variant="secondary">Upnext</Button>
+                                <button className="nav-link aboutLinks">Upnext</button>
                                 </OverlayTrigger>
                             ))}
                         </>
@@ -145,7 +145,7 @@ const Work = (props) => {
                                         </Popover>
                                     }
                                     >
-                                    <Button variant="secondary">FoodFuse</Button>
+                                    <button className="nav-link aboutLinks">FoodFuse</button>
                                     </OverlayTrigger>
                                 ))}
                             </>
