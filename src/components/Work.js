@@ -10,102 +10,30 @@ import { makeStyles } from '@material-ui/core/styles';
 const Work = (props) => {
 
     const useStyles = makeStyles((theme) => ({
-        popover: {
-          pointerEvents: 'none',
+        typography: {
+          padding: theme.spacing(2),
         },
-        paper: {
-          padding: theme.spacing(1),
-        },
-    }));
+      }));
 
-    const classes = useStyles();
+    const [anchorEl, setAnchorEl] = React.useState(null);
 
-    // Affirmations Popover
-    const [AffirmationsPop, setAffirmationsPop] = React.useState(null);
-    const handleAffirmationsPop = (event) => {
-        setAffirmationsPop(event.currentTarget);
+    const handleClick = (event) => {
+      setAnchorEl(event.currentTarget);
     };
     
-    const handleAffirmationsPopClose = () => {
-     setAffirmationsPop(null);
-    };
-    const openAffirmations = Boolean(AffirmationsPop);
-
-    // TBMP Popover
-    const [TBMPPop, setTBMPPop] = React.useState(null);
-    const handleTBMPPop = (event) => {
-        setTBMPPop(event.currentTarget);
+    const handleClose = () => {
+        setAnchorEl(null);
     };
     
-    const handleTBMPPopClose = () => {
-     setTBMPPop(null);
-    };
-    const openTBMP = Boolean(TBMPPop);
-
-    // Foodfuse Popover
-    const [FoodfusePop, setFoodfusePop] = React.useState(null);
-    const handleFoodfusePop = (event) => {
-        setFoodfusePop(event.currentTarget);
-    };
-    
-    const handleFoodfusePopClose = () => {
-     setFoodfusePop(null);
-    };
-    const openFoodfuse = Boolean(FoodfusePop);
-
-    // Upnext Popover
-    const [UpnextPop, setUpnextPop] = React.useState(null);
-    const handleUpnextPop = (event) => {
-        setUpnextPop(event.currentTarget);
-    };
-    
-    const handleUpnextPopClose = () => {
-     setUpnextPop(null);
-    };
-    const openUpnext = Boolean(UpnextPop);
+    const open = Boolean(anchorEl);
+    const id = open ? 'simple-popover' : undefined;
 
     return (
         <div>
             <div className="workGrid">   
                 <div className="box">
                     <p>
-                        <Typography
-                            aria-owns={openAffirmations ? 'mouse-over-popover' : undefined}
-                            aria-haspopup="true"
-                            onMouseEnter={handleAffirmationsPop}
-                            onMouseLeave={handleAffirmationsPopClose}
-                        >
-                            <img className="workLogo" alt="affirmations" src={Affirmations} width="100px"/>
-                        </Typography>
-                        <div>
-                            <Popover
-                                id="mouse-over-popover"
-                                className={classes.popover}
-                                classes={{
-                                paper: classes.paper,
-                                }}
-                                openAffirmations={openAffirmations}
-                                AffirmationsPop={AffirmationsPop}
-                                anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                                }}
-                                transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                                }}
-                                onClose={handleAffirmationsPopClose}
-                                disableRestoreFocus
-                            >
-                                <Typography>
-                                    Affirmations is a suicide prevention website built with 
-                                    <br></br>
-                                    the intention to affirm users and provide them
-                                    <br></br>
-                                    with the proper resources to find local professionals or volunteers.
-                                </Typography>
-                            </Popover>
-                        </div>
+                        <img className="workLogo" alt="affirmations" src={Affirmations} width="100px"/>
                     </p>
                     <div className="workLinks">
                         <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations </a>
@@ -114,37 +42,7 @@ const Work = (props) => {
                 </div>
                 <div className="box">
                     <p>
-                        <Typography
-                            aria-owns={openTBMP ? 'mouse-over-popover' : undefined}
-                            aria-haspopup="true"
-                            onMouseEnter={handleTBMPPop}
-                            onMouseLeave={handleTBMPPopClose}
-                        >
-                            <img className="workLogo tbmplogo" alt="the big mac project" src={TBMP} width="90px"/>
-                        </Typography>
-                        <div>
-                            <Popover
-                                id="mouse-over-popover"
-                                className={classes.popover}
-                                classes={{
-                                paper: classes.paper,
-                                }}
-                                openTBMP={openTBMP}
-                                TBMPPop={TBMPPop}
-                                anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                                }}
-                                transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                                }}
-                                onClose={handleTBMPPopClose}
-                                disableRestoreFocus
-                            >
-                                <Typography>I use Popover.</Typography>
-                            </Popover>
-                        </div>
+                        <img className="workLogo tbmplogo" alt="the big mac project" src={TBMP} width="90px"/>
                     </p>
                     <div className="workLinks">
                         <a href="" target="_blank">TBMP </a>
@@ -153,37 +51,7 @@ const Work = (props) => {
                 </div>
                 <div className="box">
                     <p>
-                        <Typography
-                            aria-owns={openUpnext ? 'mouse-over-popover' : undefined}
-                            aria-haspopup="true"
-                            onMouseEnter={handleUpnextPop}
-                            onMouseLeave={handleUpnextPopClose}
-                        >
-                            <img className="workLogo upnextlogo" alt="upnext" src={Upnext} width="110px"/>
-                        </Typography>
-                        <div>
-                            <Popover
-                                id="mouse-over-popover"
-                                className={classes.popover}
-                                classes={{
-                                paper: classes.paper,
-                                }}
-                                openUpnext={openUpnext}
-                                UpnextPop={UpnextPop}
-                                anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                                }}
-                                transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                                }}
-                                onClose={handleUpnextPopClose}
-                                disableRestoreFocus
-                            >
-                                <Typography>I use Popover.</Typography>
-                            </Popover>
-                        </div>
+                        <img className="workLogo upnextlogo" alt="upnext" src={Upnext} width="110px"/>
                     </p>
                     <div className="workLinks">
                         <a href="http://upnext-app.herokuapp.com/" rel="noreferrer" target="_blank">Upnext </a>
@@ -192,37 +60,7 @@ const Work = (props) => {
                 </div>
                 <div className="box">
                     <p>
-                        <Typography
-                            aria-owns={openFoodfuse ? 'mouse-over-popover' : undefined}
-                            aria-haspopup="true"
-                            onMouseEnter={handleFoodfusePop}
-                            onMouseLeave={handleFoodfusePopClose}
-                        >
-                            <img className="workLogo" alt="Foodfuse" src={Foodfuse} width="130px"/>
-                        </Typography>
-                        <div>
-                            <Popover
-                                id="mouse-over-popover"
-                                className={classes.popover}
-                                classes={{
-                                paper: classes.paper,
-                                }}
-                                openFoodfuse={openFoodfuse}
-                                FoodfusePop={FoodfusePop}
-                                anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                                }}
-                                transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                                }}
-                                onClose={handleFoodfusePopClose}
-                                disableRestoreFocus
-                            >
-                                <Typography>I use Popover.</Typography>
-                            </Popover>
-                        </div>
+                        <img className="workLogo" alt="Foodfuse" src={Foodfuse} width="130px"/>
                     </p>
                     <div className="workLinks">
                         <a href="https://foodfuse.herokuapp.com/" rel="noreferrer" target="_blank">FoodFuse </a>
