@@ -15,17 +15,15 @@ const Work = (props) => {
           padding: theme.spacing(2),
         },
       }));
+    const classes = useStyles();
 
     const [anchorEl, setAnchorEl] = React.useState(null);
-
     const handleClick = (event) => {
       setAnchorEl(event.currentTarget);
     };
-    
     const handleClose = () => {
-        setAnchorEl(null);
+      setAnchorEl(null);
     };
-    
     const open = Boolean(anchorEl);
     const id = open ? 'simple-popover' : undefined;
 
@@ -37,13 +35,28 @@ const Work = (props) => {
                         <img className="workLogo" alt="affirmations" src={Affirmations} width="100px"/>
                     </p>
                     <div className="workLinks">
-                    <div>
                         <Button aria-describedby={id} variant="contained" color="primary" onClick={handleClick}>
-                            Open Popover
+                            Affirmations
                         </Button>
-                    </div>
-                        {/* <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations </a>
-                        <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank"> Github</a> */}
+                        <Popover
+                            id={id}
+                            open={open}
+                            anchorEl={anchorEl}
+                            onClose={handleClose}
+                            anchorOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'center',
+                            }}
+                            transformOrigin={{
+                            vertical: 'top',
+                            horizontal: 'center',
+                            }}
+                        >
+                            <Typography className={classes.typography}>
+                                <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations</a>
+                                <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank"> Github</a>
+                            </Typography>
+                        </Popover>
                     </div>
                 </div>
                 <div className="box">
@@ -51,8 +64,28 @@ const Work = (props) => {
                         <img className="workLogo tbmplogo" alt="the big mac project" src={TBMP} width="90px"/>
                     </p>
                     <div className="workLinks">
-                        {/* <a href="" target="_blank">TBMP </a>
-                        <a href="https://github.com/thleigh/The_Big_Mac_Front_End" rel="noreferrer" target="_blank"> Github</a> */}
+                        <Button aria-describedby={id} variant="contained" color="primary" onClick={handleClick}>
+                            Affirmations
+                        </Button>
+                        <Popover
+                            id={id}
+                            open={open}
+                            anchorEl={anchorEl}
+                            onClose={handleClose}
+                            anchorOrigin={{
+                            vertical: 'bottom',
+                            horizontal: 'center',
+                            }}
+                            transformOrigin={{
+                            vertical: 'top',
+                            horizontal: 'center',
+                            }}
+                        >
+                            <Typography className={classes.typography}>
+                                <a href="" target="_blank">TBMP </a>
+                                <a href="https://github.com/thleigh/The_Big_Mac_Front_End" rel="noreferrer" target="_blank"> Github</a>
+                            </Typography>
+                        </Popover>
                     </div>
                 </div>
                 <div className="box">
