@@ -24,7 +24,7 @@ const Work = (props) => {
     const [AffirmationsPop, setAffirmationsPop] = React.useState(null);
     const handleAffirmationsPop = (event) => {
         setAffirmationsPop(event.currentTarget);
-      };
+    };
     
     const handleAffirmationsPopClose = () => {
      setAffirmationsPop(null);
@@ -35,7 +35,7 @@ const Work = (props) => {
     const [TBMPPop, setTBMPPop] = React.useState(null);
     const handleTBMPPop = (event) => {
         setTBMPPop(event.currentTarget);
-      };
+    };
     
     const handleTBMPPopClose = () => {
      setTBMPPop(null);
@@ -46,7 +46,7 @@ const Work = (props) => {
     const [FoodfusePop, setFoodfusePop] = React.useState(null);
     const handleFoodfusePop = (event) => {
         setFoodfusePop(event.currentTarget);
-      };
+    };
     
     const handleFoodfusePopClose = () => {
      setFoodfusePop(null);
@@ -57,7 +57,7 @@ const Work = (props) => {
     const [UpnextPop, setUpnextPop] = React.useState(null);
     const handleUpnextPop = (event) => {
         setUpnextPop(event.currentTarget);
-      };
+    };
     
     const handleUpnextPopClose = () => {
      setUpnextPop(null);
