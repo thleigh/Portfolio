@@ -51,8 +51,34 @@ const Work = (props) => {
                         <img className="workLogo tbmplogo" alt="the big mac project" src={TBMP} width="90px"/>
                     </p>
                     <div className="workLinks">
-                        <a href="" target="_blank">TBMP </a>
-                        <a href="https://github.com/thleigh/The_Big_Mac_Front_End" rel="noreferrer" target="_blank"> Github</a>
+                    <>
+                        {['top'].map((placement) => (
+                            <OverlayTrigger
+                            trigger="click"
+                            key={placement}
+                            placement={placement}
+                            overlay={
+                                <Popover id={`popover-positioned-${placement}`}>
+                                <Popover.Title as="h3">{`The Big Mac Project`}</Popover.Title>
+                                <Popover.Content>
+                                    <div className="popoverContent">
+                                        <p>
+                                            The Big Mac Project finds the price of every Mcdonald's Big Mac meal across the United States and compares them.
+                                            The goal behind The Big Mac Project is to find the relationship between the cost of living between each city and 
+                                            how that effects the price of common goods. 
+                                        </p>
+                                        <a href="" target="_blank">The Big Mac Project Site</a>
+                                        <br></br>
+                                        <a href="https://github.com/thleigh/The_Big_Mac_Front_End" rel="noreferrer" target="_blank"> Github</a>
+                                    </div>
+                                </Popover.Content>
+                                </Popover>
+                            }
+                            >
+                            <Button variant="secondary">Affirmations</Button>
+                            </OverlayTrigger>
+                        ))}
+                    </>
                     </div>
                 </div>
                 <div className="box">
