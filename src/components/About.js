@@ -76,7 +76,7 @@ const About = ({fullpageApi}) => {
                     </div>
                     <div className="aboutContainer">
 
-                        <p> I am a software engineer with an immeasurable passion for cultivating 
+                        <p> I am a software engineer and graphic designer with an immeasurable passion for cultivating 
                             relationships and seeing the best in every moment. 
                             Having a background in film and graphic design, 
                             I know how to structure code and create content that is not only 
