@@ -19,6 +19,7 @@ const Work = (props) => {
                         <>
                             {['top'].map((placement) => (
                                 <OverlayTrigger
+                                rootClose
                                 trigger="click"
                                 key={placement}
                                 placement={placement}
@@ -54,6 +55,7 @@ const Work = (props) => {
                         <>
                             {['top'].map((placement) => (
                                 <OverlayTrigger
+                                rootClose
                                 trigger="click"
                                 key={placement}
                                 placement={placement}
@@ -93,6 +95,7 @@ const Work = (props) => {
                         <>
                             {['top'].map((placement) => (
                                 <OverlayTrigger
+                                rootClose
                                 trigger="click"
                                 key={placement}
                                 placement={placement}
@@ -128,6 +131,7 @@ const Work = (props) => {
                         <>
                                 {['top'].map((placement) => (
                                     <OverlayTrigger
+                                    rootClose
                                     trigger="click"
                                     key={placement}
                                     placement={placement}
