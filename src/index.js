@@ -7,6 +7,8 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Welcome from './components/Welcome';
 import About from './components/About';
 import Work from './components/Work'
+import Work2 from './components/Work2'
+
 import NavBar from './components/NavBar';
 
 const Fullpage = () => (
@@ -39,6 +41,11 @@ const Fullpage = () => (
             <div className="section">
               <Router>
                 <Work />
+              </Router>
+            </div>
+            <div className="section">
+              <Router>
+                <Work2 />
               </Router>
             </div>
           </ReactFullpage.Wrapper>

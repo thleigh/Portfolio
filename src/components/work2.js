@@ -11,7 +11,7 @@ const pluginWrapper = () => {
     require('./statics/fullpage.scrollHorizontally.min');
   };
 
-const Work = (props) => {
+const Work2 = (props) => {
 
     return (
         <div>
@@ -44,4 +44,4 @@ const Work = (props) => {
     )
 }
 
-export default Work
+export default Work2

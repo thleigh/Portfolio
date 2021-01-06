@@ -4,7 +4,6 @@ import TBMP from '../assets/tbmplogo.png'
 import Upnext from '../assets/upnextlogo.png'
 import Foodfuse from '../assets/foodfuselogo.png'
 import { OverlayTrigger, Popover } from 'react-bootstrap'
-import ReactFullpage from '@fullpage/react-fullpage';
 
 const Work = (props) => {
 
