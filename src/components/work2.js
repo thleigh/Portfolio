@@ -4,7 +4,12 @@ import TBMP from '../assets/tbmplogo.png'
 import Upnext from '../assets/upnextlogo.png'
 import Foodfuse from '../assets/foodfuselogo.png'
 import { OverlayTrigger, Popover } from 'react-bootstrap'
+import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
+
+const pluginWrapper = () => {
+    require('./statics/fullpage.scrollHorizontally.min');
+  };
 
 const Work = (props) => {
 
