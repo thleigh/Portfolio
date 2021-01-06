@@ -1,28 +1,23 @@
 import React from 'react';
-import Affirmations from '../assets/affirmationslogo.png'
-import TBMP from '../assets/tbmplogo.png'
-import Upnext from '../assets/upnextlogo.png'
-import Foodfuse from '../assets/foodfuselogo.png'
-import { OverlayTrigger, Popover } from 'react-bootstrap'
 import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
 
-const pluginWrapper = () => {
-    require('./statics/fullpage.scrollHorizontally.min');
-  };
+// const pluginWrapper = () => {
+//     require('./statics/fullpage.scrollHorizontally.min');
+//   };
 
 const Work2 = (props) => {
 
     return (
         <div>
             <ReactFullpage
-                pluginWrapper = {pluginWrapper}
+                // pluginWrapper = {pluginWrapper}
 
                 //fullpage options
-                licenseKey = {'YOUR_KEY_HERE'}
+                licenseKey = {'SCROLL_KEY'}
                 scrollingSpeed = {1000} /* Options here */
                 scrollHorizontally = {true}  /* Because we are using the extension */
-                scrollHorizontallyKey = {'YOUR KEY HERE'}
+                scrollHorizontallyKey = {'HORIZONTAL_KEY'}
 
                 render={({ state, fullpageApi }) => {
                 return (

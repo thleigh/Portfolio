@@ -14,7 +14,7 @@ import NavBar from './components/NavBar';
 const Fullpage = () => (
   <ReactFullpage
     // API KEY
-     licenseKey={'SCROLL_KEY'}
+    licenseKey={'SCROLL_KEY'}
     // the page names in the url set as #
     anchors={['Welcome', 'Main', 'Work']}
     // navigation dots on the right
