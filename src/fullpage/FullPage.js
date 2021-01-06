@@ -4,6 +4,7 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Welcome from '../components/Welcome';
 import About from '../components/About';
 import Contact from '../components/Contact'
+import Work2 from '../components/Work2'
 import './style.css';
 
 const SEL = 'custom-section';
@@ -24,6 +25,9 @@ class FullPage extends React.Component {
         },
         {
           page: <Contact />,
+        },
+        {
+          page: <Work2 />,
         }
       ],
     };
@@ -61,6 +65,9 @@ class FullPage extends React.Component {
               </div>
               <div className="section">
                 <Contact />
+              </div>
+              <div className="section">
+                <Work2 />
               </div>
             </ReactFullpage.Wrapper>
           )}
