@@ -4,7 +4,7 @@ import TBMP from '../assets/tbmplogo.png'
 import Upnext from '../assets/upnextlogo.png'
 import Foodfuse from '../assets/foodfuselogo.png'
 import { OverlayTrigger, Popover } from 'react-bootstrap'
-
+import ReactFullpage from '@fullpage/react-fullpage';
 
 const Work = (props) => {
 
@@ -20,7 +20,7 @@ const Work = (props) => {
                             {['top'].map((placement) => (
                                 <OverlayTrigger
                                 rootClose
-                                trigger="click"
+                                trigger="focus"
                                 key={placement}
                                 placement={placement}
                                 overlay={
