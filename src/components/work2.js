@@ -2,35 +2,45 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
 
-// const pluginWrapper = () => {
-//     require('./statics/fullpage.scrollHorizontally.min');
-//   };
+import Welcome from './components/Welcome';
+import About from './components/About';
+import Work from './components/Work'
+
+const pluginWrapper = () => {
+    require('../statics/fullpage.continuousHorizontal.min.js');
+  };
 
 const Work2 = (props) => {
 
     return (
         <div>
             <ReactFullpage
-                // pluginWrapper = {pluginWrapper}
+                pluginWrapper = {pluginWrapper}
 
                 //fullpage options
                 licenseKey = {'SCROLL_KEY'}
                 scrollingSpeed = {1000} /* Options here */
-                scrollHorizontally = {true}  /* Because we are using the extension */
-                scrollHorizontallyKey = {'HORIZONTAL_KEY'}
+                continuousHorizontal = {true}  /* Because we are using the extension */
+                continuousHorizontalKey = {'HORIZONTAL_KEY'}
 
                 render={({ state, fullpageApi }) => {
                 return (
                     <ReactFullpage.Wrapper>
-                    <div className="section">
-                        <p>Section 1 (welcome to fullpage.js)</p>
-                        <button onClick={() => fullpageApi.moveSectionDown()}>
-                        Click me to move down
-                        </button>
-                    </div>
-                    <div className="section">
-                        <p>Section 2</p>
-                    </div>
+                        <div className="section">
+                        <Router>
+                            <Welcome fullpageApi={fullpageApi}/>
+                        </Router>
+                        </div>
+                        <div className="section">
+                        <Router>
+                            <About fullpageApi={fullpageApi}/>
+                        </Router>
+                        </div>
+                        <div className="section">
+                        <Router>
+                            <Work />
+                        </Router>
+                        </div>
                     </ReactFullpage.Wrapper>
                 );
                 }}

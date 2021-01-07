@@ -16,7 +16,7 @@ const Fullpage = () => (
     // API KEY
     licenseKey={'SCROLL_KEY'}
     // the page names in the url set as #
-    anchors={['Welcome', 'Main', 'Work']}
+    anchors={['Welcome', 'Main', 'Work', 'Work2']}
     // navigation dots on the right
     navigation
     scrollingSpeed = {700}
