@@ -7,7 +7,6 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Welcome from './components/Welcome';
 import About from './components/About';
 import Work from './components/Work';
-import Work2 from './components/Work2';
 
 import NavBar from './components/NavBar';
 
@@ -21,13 +20,12 @@ const Fullpage = () => (
     // API KEY
     licenseKey={'SCROLL_KEY'}
     // the page names in the url set as #
-    anchors={['Welcome', 'Main', 'Work', 'Work2']}
+    anchors={['Welcome', 'Main', 'Work']}
     // navigation dots on the right
     navigation
     scrollingSpeed = {700}
     continuousHorizontalKey = {'dGFubmVyaGxlaWdoLmNvbV8xODhZMjl1ZEdsdWRXOTFjMGh2Y21sNmIyNTBZV3c9OHI1'}
     continuousHorizontal = {true}  /* Because we are using the extension */
-    controlArrows = {true}
 
     render={({ state, fullpageApi }) => {
       return (
@@ -49,11 +47,6 @@ const Fullpage = () => (
             <div className="section">
               <Router>
                 <Work />
-              </Router>
-            </div>
-            <div className="section">
-              <Router>
-                <Work2 />
               </Router>
             </div>
           </ReactFullpage.Wrapper>
