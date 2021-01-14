@@ -11,8 +11,8 @@ const Work2 = () => (
     //fullpage options
     licenseKey = {'SCROLL_KEY'}
     scrollingSpeed = {1000} /* Options here */
+    continuousHorizontalKey = {'dGFubmVyaGxlaWdoLmNvbV8xODhZMjl1ZEdsdWRXOTFjMGh2Y21sNmIyNTBZV3c9OHI1'}
     continuousHorizontal = {true}  /* Because we are using the extension */
-    continuousHorizontalKey = {'HORIZONTAL_KEY'}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>

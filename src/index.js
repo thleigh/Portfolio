@@ -25,8 +25,8 @@ const Fullpage = () => (
     // navigation dots on the right
     navigation
     scrollingSpeed = {700}
+    continuousHorizontalKey = {'dGFubmVyaGxlaWdoLmNvbV8xODhZMjl1ZEdsdWRXOTFjMGh2Y21sNmIyNTBZV3c9OHI1'}
     continuousHorizontal = {true}  /* Because we are using the extension */
-    continuousHorizontalKey = {'HORIZONTAL_KEY'}
     controlArrows = {true}
 
     render={({ state, fullpageApi }) => {
