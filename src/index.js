@@ -17,6 +17,7 @@ const pluginWrapper = () => {
 
 const Fullpage = () => (
   <ReactFullpage
+    pluginWrapper = {pluginWrapper}
     // API KEY
     licenseKey={'SCROLL_KEY'}
     // the page names in the url set as #
@@ -24,6 +25,9 @@ const Fullpage = () => (
     // navigation dots on the right
     navigation
     scrollingSpeed = {700}
+    continuousHorizontal = {true}  /* Because we are using the extension */
+    continuousHorizontalKey = {'HORIZONTAL_KEY'}
+    controlArrows = {true}
 
     render={({ state, fullpageApi }) => {
       return (
