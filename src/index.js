@@ -6,10 +6,14 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import ReactFullpage from '@fullpage/react-fullpage';
 import Welcome from './components/Welcome';
 import About from './components/About';
-import Work from './components/Work'
-import Work2 from './components/Work2'
+import Work from './components/Work';
+import Work2 from './components/Work2';
 
 import NavBar from './components/NavBar';
+
+const pluginWrapper = () => {
+  require('./statics/fullpage.continuousHorizontal.min.js');
+};
 
 const Fullpage = () => (
   <ReactFullpage

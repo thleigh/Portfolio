@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactFullpage from '@fullpage/react-fullpage';
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import Welcome from './components/Welcome';
-import About from './components/About';
-import Work from './components/Work'
+import Welcome from '../components/Welcome';
+import About from '../components/About';
+import Work from '../components/Work';
 
 const pluginWrapper = () => {
     require('../statics/fullpage.continuousHorizontal.min.js');
@@ -22,6 +23,7 @@ const Work2 = (props) => {
                 scrollingSpeed = {1000} /* Options here */
                 continuousHorizontal = {true}  /* Because we are using the extension */
                 continuousHorizontalKey = {'HORIZONTAL_KEY'}
+                controlArrows = {true}
 
                 render={({ state, fullpageApi }) => {
                 return (
