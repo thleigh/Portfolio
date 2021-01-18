@@ -19,7 +19,7 @@ const Work = (props) => {
                             {['top'].map((placement) => (
                                 <OverlayTrigger
                                 rootClose
-                                trigger="focus"
+                                trigger="click"
                                 key={placement}
                                 placement={placement}
                                 overlay={
