@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter as Router } from 'react-router-dom'
+import env from "react-dotenv"
 
 import ReactFullpage from '@fullpage/react-fullpage';
 import Welcome from './components/Welcome';

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Affirmations from '../assets/affirmationslogo.png'
 import TBMP from '../assets/tbmplogo.png'
 import Upnext from '../assets/upnextlogo.png'
@@ -6,6 +6,12 @@ import Foodfuse from '../assets/foodfuselogo.png'
 import { OverlayTrigger, Popover } from 'react-bootstrap'
 
 const Work = (props) => {
+    const [show, setShow] = useState(false);
+
+    const handleScroll = () => {
+        setShow(show);
+        console.log("hellow")
+    };
 
     return (
         <div>
@@ -22,6 +28,7 @@ const Work = (props) => {
                                 trigger="click"
                                 key={placement}
                                 placement={placement}
+                                onScroll={handleScroll}
                                 overlay={
                                     <Popover id={`popover-positioned-${placement}`}>
                                     <Popover.Title as="h3">{`Affirmations App`}</Popover.Title>
