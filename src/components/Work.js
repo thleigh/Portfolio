@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
-import Affirmations from '../assets/affirmationslogo.png'
-import TBMP from '../assets/tbmplogo.png'
-import Upnext from '../assets/upnextlogo.png'
-import Foodfuse from '../assets/foodfuselogo.png'
-import { OverlayTrigger, Popover } from 'react-bootstrap'
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom';
+import Affirmations from '../assets/affirmationslogo.png';
+import TBMP from '../assets/tbmplogo.png';
+import Upnext from '../assets/upnextlogo.png';
+import Foodfuse from '../assets/foodfuselogo.png';
+import { OverlayTrigger, Popover } from 'react-bootstrap';
 
 const Work = (props) => {
     const [show, setShow] = useState(false);
 
-    const handleScroll = () => {
-        setShow(show);
+    const handleScroll = (event) => {
+        setShow(!show);
         console.log("hellow")
     };
+
+    useEffect(() => {
+        window.addEventListener('scroll', this.handleScroll)
+    }, []);
 
     return (
         <div>
@@ -20,8 +25,8 @@ const Work = (props) => {
                     <p>
                         <img className="workLogo" alt="affirmations" src={Affirmations} width="100px"/>
                     </p>
-                    <div className="workLinks">
-                        <>
+                    <div className="workLinks" >
+                        <div> 
                             {['top'].map((placement) => (
                                 <OverlayTrigger
                                 rootClose
@@ -30,7 +35,7 @@ const Work = (props) => {
                                 placement={placement}
                                 onScroll={handleScroll}
                                 overlay={
-                                    <Popover id={`popover-positioned-${placement}`}>
+                                    <Popover id={`popover-positioned-${placement}`} onSroll={!show}>
                                     <Popover.Title as="h3">{`Affirmations App`}</Popover.Title>
                                     <Popover.Content>
                                         <div className="popoverContent">
@@ -50,7 +55,7 @@ const Work = (props) => {
                                  <button className="nav-link aboutLinks">Affirmations</button>
                                 </OverlayTrigger>
                             ))}
-                        </>
+                        </div>
                     </div>
                 </div>
                 <div className="box">
