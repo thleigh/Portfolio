@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom';
 import Affirmations from '../assets/affirmationslogo.png';
 import TBMP from '../assets/tbmplogo.png';
 import Upnext from '../assets/upnextlogo.png';
@@ -9,14 +8,14 @@ import { OverlayTrigger, Popover } from 'react-bootstrap';
 const Work = (props) => {
     const [show, setShow] = useState(false);
 
-    const handleScroll = (event) => {
-        setShow(!show);
-        console.log("hellow")
-    };
-
     useEffect(() => {
-        window.addEventListener('scroll', this.handleScroll)
-    }, []);
+        const onScroll = e => {
+            setShow(!show);
+            console.log("hello")
+        }
+        window.addEventListener('scroll', onScroll)
+        // return () => window.removeEventListener("scroll", onScroll);
+    }, [show]);
 
     return (
         <div>
@@ -33,9 +32,8 @@ const Work = (props) => {
                                 trigger="click"
                                 key={placement}
                                 placement={placement}
-                                onScroll={handleScroll}
                                 overlay={
-                                    <Popover id={`popover-positioned-${placement}`} onSroll={!show}>
+                                    <Popover id={`popover-positioned-${placement}`} >
                                     <Popover.Title as="h3">{`Affirmations App`}</Popover.Title>
                                     <Popover.Content>
                                         <div className="popoverContent">
@@ -84,7 +82,7 @@ const Work = (props) => {
                                                 The site is currently down, but will be back up soon.
                                                 </strong>
                                             </p>
-                                            <a href="" target="_blank">The Big Mac Project Site</a>
+                                            <a href="/" target="_blank">The Big Mac Project Site</a>
                                             <br></br>
                                             <a href="https://github.com/thleigh/The_Big_Mac_Front_End" rel="noreferrer" target="_blank"> Github</a>
                                         </div>
