@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from 'react-elastic-carousel';
+
 class Work2 extends Component {
   state = {
     items: [
@@ -7,7 +8,6 @@ class Work2 extends Component {
       {id: 2, title: 'item #2'},
       {id: 3, title: 'item #3'},
       {id: 4, title: 'item #4'},
-      {id: 5, title: 'item #5'}
     ]
   }
   render () {
@@ -19,3 +19,5 @@ class Work2 extends Component {
     )
   }
 }
+
+export default Work2
