@@ -12,13 +12,9 @@ import Work2 from './components/Work2'
 
 import NavBar from './components/NavBar';
 
-const pluginWrapper = () => {
-  require('./statics/fullpage.continuousHorizontal.min.js');
-};
 
 const Fullpage = () => (
   <ReactFullpage
-    pluginWrapper = {pluginWrapper}
     // API KEY
     licenseKey={process.env.SCROLL_KEY}
     // the page names in the url set as #

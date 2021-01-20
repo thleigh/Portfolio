@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import Carousel from 'react-elastic-carousel';
+import Affirmations from '../assets/affirmationsss.png';
+import TBMP from '../assets/affirmationsss.png';
+import Upnext from '../assets/upnextss.png';
+import Foodfuse from '../assets/foodfusess.png';
 
 class Work2 extends Component {
   state = {

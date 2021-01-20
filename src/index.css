@@ -18,6 +18,10 @@ a {
   position: fixed;
 }
 
+#fp-nav {
+  margin-top: -15px;
+}
+
 .section {
   z-index: -1;
 }
@@ -185,22 +189,28 @@ a {
 /* square buttons */
 .rec.rec-arrow {
   border-radius: 0;
+  color: black;
 }
 
-.rec.rec-arrow-right {
+.rec-arrow-right {
   margin-right: 100px;
 }
 
-.rec.rec-arrow-left {
+.rec-arrow-left {
   margin-left: 100px;
 }
 
 /* round buttons on hover */
 .rec.rec-arrow:hover {
-  border-radius: 50%;
+  color: black;
 }
+/* 
+.rec.rec-pagination {
+  margin-bottom: 100px;
+} */
+
 /* hide disabled buttons */
-.rec.rec-arrow:disabled {
+.rec-arrow:disabled {
   visibility: hidden;
 }
 /* disable default outline on focused items */
