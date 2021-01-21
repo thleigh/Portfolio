@@ -17,20 +17,27 @@ class Work2 extends Component {
   render () {
     const { items } = this.state;
     return (
-      <Carousel itemsToShow={1}>
-        <div key={items.id}>
-            <img className="screenshot" src={Affirmations} alt="Affirmations"></img>
-        </div>
-        <div key={items.id}>
-            <img className="screenshot" src={TBMP} alt="TBMP"></img>
-        </div>
-        <div key={items.id}>
-            <img className="screenshot" src={Upnext} alt="Upnext"></img>
-        </div>
-        <div key={items.id}>
-            <img className="screenshot" src={Foodfuse} alt="Foodfuse"></img>
-        </div>
-      </Carousel>
+        <>
+            <div>
+                <h3 className="workTitle">Work</h3>
+            </div>
+            <div>
+            <Carousel itemsToShow={1}>
+                <div key={items.id}>
+                    <img className="screenshot" src={Affirmations} alt="Affirmations"></img>
+                </div>
+                <div key={items.id}>
+                    <img className="screenshot" src={Upnext} alt="Upnext"></img>
+                </div>
+                <div key={items.id}>
+                    <img className="screenshot" src={TBMP} alt="TBMP"></img>
+                </div>
+                <div key={items.id}>
+                    <img className="screenshot" src={Foodfuse} alt="Foodfuse"></img>
+                </div>
+            </Carousel>
+            </div>
+        </>
     )
   }
 }
