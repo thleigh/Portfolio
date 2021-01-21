@@ -17,8 +17,13 @@ class Work2 extends Component {
   render () {
     const { items } = this.state;
     return (
-      <Carousel>
-        {items.map(item => <div key={item.id}>{item.title}</div>)}
+      <Carousel itemsToShow={1}>
+        <div key={items.id}>
+            <img className="screenshot" src={Affirmations} alt="Affirmations"></img>
+        </div>
+        <div key={items.id}>
+            <img className="screenshot"></img>
+        </div>
       </Carousel>
     )
   }

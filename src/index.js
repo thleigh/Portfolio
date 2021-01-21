@@ -18,7 +18,7 @@ const Fullpage = () => (
     // API KEY
     licenseKey={process.env.SCROLL_KEY}
     // the page names in the url set as #
-    anchors={['Welcome', 'Main', 'Work', 'Work2']}
+    anchors={['Welcome', 'Main', 'Work2']}
     // navigation dots on the right
     navigation
     scrollingSpeed = {700}
@@ -40,11 +40,11 @@ const Fullpage = () => (
                 <About fullpageApi={fullpageApi}/>
               </Router>
             </div>
-            <div className="section">
+            {/* <div className="section">
               <Router>
                 <Work />
               </Router>
-            </div>
+            </div> */}
             <div className="section">
               <Router>
                 <Work2 />
