@@ -22,7 +22,13 @@ class Work2 extends Component {
             <img className="screenshot" src={Affirmations} alt="Affirmations"></img>
         </div>
         <div key={items.id}>
-            <img className="screenshot"></img>
+            <img className="screenshot" src={Affirmations} alt="Affirmations"></img>
+        </div>
+        <div key={items.id}>
+            <img className="screenshot" src={Affirmations} alt="Affirmations"></img>
+        </div>
+        <div key={items.id}>
+            <img className="screenshot" src={Affirmations} alt="Affirmations"></img>
         </div>
       </Carousel>
     )
