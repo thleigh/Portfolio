@@ -229,6 +229,10 @@ a {
   text-align: center;
 }
 
+.screenshot:hover { 
+  opacity: 50%;
+}
+
 .workTitle {
   text-align: center;
   padding: 10px;

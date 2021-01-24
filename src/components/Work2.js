@@ -24,6 +24,17 @@ class Work2 extends Component {
             <div>
             <Carousel itemsToShow={1}>
                 <div key={items.id}>
+                    <div>
+                      <h4>Affirmations</h4>
+                      <p>
+                        Affirmations is a website that provides its users with easily accessible suicide prevention resources and
+                        affirming quotes. Users are able to find local professional help and also have the opportunity to talk to 
+                        random volunteers. 
+                      </p>
+                      <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations Site</a>
+                      <br></br>
+                      <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank">Github</a>
+                    </div>
                     <img className="screenshot" src={Affirmations} alt="Affirmations"></img>
                 </div>
                 <div key={items.id}>
