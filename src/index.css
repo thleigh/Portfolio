@@ -228,3 +228,9 @@ a {
   top: 0%;
   text-align: center;
 }
+
+.workTitle {
+  text-align: center;
+  padding: 10px;
+  margin: -90px 0px 50px 0px;
+}
