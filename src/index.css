@@ -252,3 +252,7 @@ a {
   margin-top: 80px;
   display: none;
 }
+
+.affirmationsChild:hover {
+  display:inline;
+}
