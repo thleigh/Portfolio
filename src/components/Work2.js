@@ -4,6 +4,7 @@ import Affirmations from '../assets/affirmationsss.png';
 import TBMP from '../assets/affirmationsss.png';
 import Upnext from '../assets/upnextss.png';
 import Foodfuse from '../assets/foodfusess.png';
+import styled from "@emotion/styled/macro"
 
 class Work2 extends Component {
   // state = {
@@ -15,21 +16,21 @@ class Work2 extends Component {
   //   ]
   // }
 
-  constructor(props) {
-    super(props);
-    this.handleMouseHover = this.handleMouseHover.bind(this);
-    this.state = {
-      isHovering: false,
-    };
-  }
-  handleMouseHover() {
-    this.setState(this.toggleHoverState);
-  }
-  toggleHoverState(state) {
-    return {
-      isHovering: !state.isHovering,
-    };
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.handleMouseHover = this.handleMouseHover.bind(this);
+  //   this.state = {
+  //     isHovering: false,
+  //   };
+  // }
+  // handleMouseHover() {
+  //   this.setState(this.toggleHoverState);
+  // }
+  // toggleHoverState(state) {
+  //   return {
+  //     isHovering: !state.isHovering,
+  //   };
+  // }
 
   render () {
     // const { items } = this.state;
@@ -40,11 +41,7 @@ class Work2 extends Component {
             </div>
             <div>
             <Carousel itemsToShow={1}>
-                <div                    
-                  onMouseEnter={this.handleMouseHover}
-                  onMouseLeave={this.handleMouseHover}>
-                  {
-                    this.state.isHovering &&
+                <div>
                     <div className="affirmationsParent">
                       <div className="affirmationsChild">
                         <h4>Affirmations</h4>
@@ -58,7 +55,6 @@ class Work2 extends Component {
                         <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank">Github</a>
                       </div>
                     </div>
-                  }
                     <img className="screenshot" src={Affirmations} alt="Affirmations"></img>
                 </div>
                 <div >
