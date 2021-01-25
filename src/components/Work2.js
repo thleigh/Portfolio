@@ -91,11 +91,7 @@ class Work2 extends Component {
                           affirming quotes. Users are able to find local professional help and also have the opportunity to talk to 
                           random volunteers. 
                       </Paragraph>
-                      <CTA>
-                        <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations Site</a>
-                        <br></br>
-                        <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank">Github</a>
-                      </CTA>
+                      <CTA>View More +</CTA>
                     </Hover>
                   </DisplayOver>
                 </Background>

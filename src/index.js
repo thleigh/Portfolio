@@ -40,11 +40,6 @@ const Fullpage = () => (
                 <About fullpageApi={fullpageApi}/>
               </Router>
             </div>
-            {/* <div className="section">
-              <Router>
-                <Work />
-              </Router>
-            </div> */}
             <div className="section">
               <Router>
                 <Work2 />
