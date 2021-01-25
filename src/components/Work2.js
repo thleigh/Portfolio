@@ -6,16 +6,33 @@ import Upnext from '../assets/upnextss.png';
 import Foodfuse from '../assets/foodfusess.png';
 
 class Work2 extends Component {
-  state = {
-    items: [
-      {id: 1, title: 'item #1'},
-      {id: 2, title: 'item #2'},
-      {id: 3, title: 'item #3'},
-      {id: 4, title: 'item #4'},
-    ]
+  // state = {
+  //   items: [
+  //     {id: 1, title: 'item #1'},
+  //     {id: 2, title: 'item #2'},
+  //     {id: 3, title: 'item #3'},
+  //     {id: 4, title: 'item #4'},
+  //   ]
+  // }
+
+  constructor(props) {
+    super(props);
+    this.handleMouseHover = this.handleMouseHover.bind(this);
+    this.state = {
+      isHovering: false,
+    };
   }
+  handleMouseHover() {
+    this.setState(this.toggleHoverState);
+  }
+  toggleHoverState(state) {
+    return {
+      isHovering: !state.isHovering,
+    };
+  }
+
   render () {
-    const { items } = this.state;
+    // const { items } = this.state;
     return (
         <>
             <div>
@@ -23,9 +40,12 @@ class Work2 extends Component {
             </div>
             <div>
             <Carousel itemsToShow={1}>
-                <div key={items.id}>
+                <div>
                   <div className="affirmationsParent">
-                      <div className="affirmationsChild">
+                      <div className="affirmationsChild"           
+                        onMouseEnter={this.handleMouseHover}
+                        onMouseLeave={this.handleMouseHover}
+                      >
                         <h4>Affirmations</h4>
                         <p>
                           Affirmations is a website that provides its users with easily accessible suicide prevention resources and
@@ -39,13 +59,13 @@ class Work2 extends Component {
                   </div>
                     <img className="screenshot" src={Affirmations} alt="Affirmations"></img>
                 </div>
-                <div key={items.id}>
+                <div >
                     <img className="screenshot" src={Upnext} alt="Upnext"></img>
                 </div>
-                <div key={items.id}>
+                <div>
                     <img className="screenshot" src={TBMP} alt="TBMP"></img>
                 </div>
-                <div key={items.id}>
+                <div>
                     <img className="screenshot" src={Foodfuse} alt="Foodfuse"></img>
                 </div>
             </Carousel>
