@@ -40,12 +40,13 @@ class Work2 extends Component {
             </div>
             <div>
             <Carousel itemsToShow={1}>
-                <div>
-                  <div className="affirmationsParent">
-                      <div className="affirmationsChild"           
-                        onMouseEnter={this.handleMouseHover}
-                        onMouseLeave={this.handleMouseHover}
-                      >
+                <div                    
+                  onMouseEnter={this.handleMouseHover}
+                  onMouseLeave={this.handleMouseHover}>
+                  {
+                    this.state.isHovering &&
+                    <div className="affirmationsParent">
+                      <div className="affirmationsChild">
                         <h4>Affirmations</h4>
                         <p>
                           Affirmations is a website that provides its users with easily accessible suicide prevention resources and
@@ -56,7 +57,8 @@ class Work2 extends Component {
                         <br></br>
                         <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank">Github</a>
                       </div>
-                  </div>
+                    </div>
+                  }
                     <img className="screenshot" src={Affirmations} alt="Affirmations"></img>
                 </div>
                 <div >

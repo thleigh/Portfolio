@@ -229,9 +229,9 @@ a {
   text-align: center;
 }
 
-.screenshot:hover { 
+/* .screenshot:hover { 
   opacity: 50%;
-}
+} */
 
 .workTitle {
   text-align: center;
@@ -250,9 +250,8 @@ a {
 .affirmationsChild {
   position: absolute;
   margin-top: 80px;
-  display: none;
 }
-
+/* 
 .affirmationsChild:hover {
   display:inline;
-}
+} */
