@@ -26,6 +26,10 @@ a {
   z-index: -1;
 }
 
+.welcomeChild {
+  font-family: 'Helvetica';
+}
+
 .container {
   top: 20px;
   position: fixed;
@@ -44,6 +48,11 @@ a {
   text-decoration: none;
   margin-top: 10px;
   display: block;
+}
+
+.aboutText {
+  font-family: 'Helvetica';
+  margin-top: 15px;
 }
 
 .about {
@@ -252,7 +261,7 @@ a {
   position: absolute;
   margin-top: 80px;
 }
-/* 
-.affirmationsChild:hover {
-  display:inline;
-} */
+
+.workText {
+  font-family: 'Helvetica';
+}

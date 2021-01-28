@@ -6,7 +6,7 @@ const Welcome = ({fullpageApi}) => {
             <div className="welcomeContainer">
                 <div className="floating">
                     <h2> Welcome </h2>
-                    <div> 
+                    <div className="welcomeChild"> 
                         <div className="hover"> My name is <b>Tanner Leigh</b>. </div>
                         <br></br>
                         <div className="hover"> This is my portfolio site. </div>

@@ -140,7 +140,7 @@ class Work2 extends Component {
                     {/* <BigTitle>Really Cool Title!</BigTitle> */}
                     <Hover>
                       <SubTitle>Affirmations</SubTitle>
-                      <Paragraph>
+                      <Paragraph className="workText">
                           Affirmations is a website that provides its users with easily accessible suicide prevention resources and
                           affirming quotes. Users are able to find local professional help and also have the opportunity to talk to 
                           random volunteers. 
@@ -158,7 +158,7 @@ class Work2 extends Component {
                     {/* <BigTitle>Really Cool Title!</BigTitle> */}
                     <Hover>
                       <SubTitle>Upnext</SubTitle>
-                      <Paragraph>
+                      <Paragraph className="workText">
                         upnext is a website where users can find out about upcoming show releases, where to buy them, 
                         and how to buy them. upnext users will be able to browse older generations of sneakers and 
                         interact with other users through community pages that allow them to post pictures, comment, 
@@ -177,7 +177,7 @@ class Work2 extends Component {
                     {/* <BigTitle>Really Cool Title!</BigTitle> */}
                     <Hover>
                       <SubTitle>The Big Mac Project</SubTitle>
-                      <Paragraph>
+                      <Paragraph className="workText">
                         TBMP, otherwise known as "The Big Mac Project", finds the price of every Mcdonald's Big Mac meal across the United States and compares them.
                         The goal behind The Big Mac Project is to find the relationship between the cost of living between each city and 
                         how that effects the price of common goods. 
@@ -195,7 +195,7 @@ class Work2 extends Component {
                     {/* <BigTitle>Really Cool Title!</BigTitle> */}
                     <Hover>
                       <SubTitle>FoodFuse</SubTitle>
-                      <Paragraph>
+                      <Paragraph className="workText">
                         FoodFuse searches and sorts through the 4 major food delivery apps by the user's location and 
                         returns the restaurant's data. FoodFuse provides the users with a comparison of the delivery 
                         fee's and delivery times between each service so that the user can make an educated choice on which app to use.
