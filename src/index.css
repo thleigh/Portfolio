@@ -205,10 +205,10 @@ a {
   color: black;
 }
 
-/* 
+
 .rec.rec-pagination {
-  margin-bottom: 100px;
-} */
+  display: none;
+}
 
 /* hide disabled buttons */
 .rec-arrow:disabled {
