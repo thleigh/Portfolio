@@ -182,6 +182,9 @@ class Work2 extends Component {
                           affirming quotes. Users are able to find local professional help and also have the opportunity to talk to 
                           random volunteers. Please reach out for a demo!
                       </Paragraph>
+                      <CTA>
+                        <a href="http://www.honenetworks.com/" rel="noreferrer" target="_blank">Hone Site</a>
+                      </CTA>
                     </Hover>
                   </DisplayOver>
                 </Hone>

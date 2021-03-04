@@ -1,7 +1,7 @@
 import React from 'react';
 import me from '../assets/tanner2.png';
 import { Modal } from 'react-bootstrap'
-import Resume from '../assets/TL_RESUME.pdf'
+import Resume from '../assets/Tanner_Leigh_Resume.pdf'
 
 const About = ({fullpageApi}) => {
     let [modalResume, setModalResume] = React.useState(false);
