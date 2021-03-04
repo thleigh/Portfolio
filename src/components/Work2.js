@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Carousel from 'react-elastic-carousel';
+import Carousel, { consts } from 'react-elastic-carousel';
 import styled from "@emotion/styled/macro"
 
 const DisplayOver = styled.div({
@@ -13,6 +13,10 @@ const DisplayOver = styled.div({
   backgroundColor: "transparent",
   padding: "20px 20px 0 20px",
   boxSizing: "border-box",
+});
+
+const Button = styled.button({
+  color: "black"
 });
 
 const BigTitle = styled.h2({
@@ -127,6 +131,15 @@ const CTA = styled.a({
 
 class Work2 extends Component {
 
+  myArrow({ type, onClick, isEdge }) {
+    const pointer = type == consts.Prev ? ' < ' : ' > '
+    return (
+      <Button onClick={onClick} disabled={isEdge}>
+        {pointer}
+      </Button>
+    )
+  } 
+
   render () {
     return (
         <>
@@ -134,7 +147,7 @@ class Work2 extends Component {
                 <h3 className="workTitle">Work</h3>
             </div>
             <div>
-            <Carousel itemsToShow={1}>
+            <Carousel itemsToShow={1} renderArrow={this.myArrow}>
                 <Affirmation>
                   <DisplayOver>
                     {/* <BigTitle>Really Cool Title!</BigTitle> */}
