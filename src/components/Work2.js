@@ -180,7 +180,7 @@ class Work2 extends Component {
                       <Paragraph className="workText">
                         TBMP, otherwise known as "The Big Mac Project", finds the price of every Mcdonald's Big Mac meal across the United States and compares them.
                         The goal behind The Big Mac Project is to find the relationship between the cost of living between each city and 
-                        how that effects the price of common goods. The Big Mac Project has not been deployed online, but a demo can be shown!
+                        how that effects the price of common goods. <b>The Big Mac Project has not been deployed online, but a demo can be shown!</b>
                       </Paragraph>
                       <CTA>
                         <a href="/" target="_blank">The Big Mac Project Site</a>
