@@ -117,7 +117,8 @@ const Work = (props) => {
                                                 upnext is a website where users can find out about upcoming show releases, where to buy them, 
                                                 and how to buy them. upnext users will be able to browse older generations of sneakers and 
                                                 interact with other users through community pages that allow them to post pictures, comment, 
-                                                like, and favorite.                                            </p>
+                                                like, and favorite.                                  
+                                            </p>
                                             <a href="http://upnext-app.herokuapp.com/" rel="noreferrer" target="_blank">Upnext Site</a>
                                             <br></br>
                                             <a href="https://github.com/thleigh/upnext" rel="noreferrer" target="_blank">Github</a>
