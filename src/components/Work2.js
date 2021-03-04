@@ -126,6 +126,26 @@ const Affirmation = styled.div({
   },
 });
 
+const Hone = styled.div({
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  color: "#FFF",
+  position: "relative",
+  width: "600px",
+  height: "350px",
+  cursor: "pointer",
+  backgroundImage: "url(/bg.jpg)",
+  [`:hover ${DisplayOver}`]: {
+    backgroundColor: "rgba(0,0,0,.5)",
+  },
+  [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
+    transform: "translate3d(0,0,0)",
+  },
+  [`:hover ${Hover}`]: {
+    opacity: 1,
+  },
+});
+
 const CTA = styled.a({
   position: "absolute",
   bottom: "80px",
@@ -151,7 +171,20 @@ class Work2 extends Component {
                 <h3 className="workTitle">Work</h3>
             </div>
             <div className="workCarousel">
-            <Carousel itemsToShow={1} renderArrow={this.myArrow}>
+            <Carousel itemsToShow={1} renderArrow={this.myArrow}>                
+                <Hone>
+                  <DisplayOver>
+                    {/* <BigTitle>Really Cool Title!</BigTitle> */}
+                    <Hover>
+                      <SubTitle>Hone</SubTitle>
+                      <Paragraph className="workText">
+                          Hones is a website that provides its users with easily accessible suicide prevention resources and
+                          affirming quotes. Users are able to find local professional help and also have the opportunity to talk to 
+                          random volunteers. Please reach out for a demo!
+                      </Paragraph>
+                    </Hover>
+                  </DisplayOver>
+                </Hone>
                 <Affirmation>
                   <DisplayOver>
                     {/* <BigTitle>Really Cool Title!</BigTitle> */}
