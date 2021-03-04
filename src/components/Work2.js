@@ -16,7 +16,11 @@ const DisplayOver = styled.div({
 });
 
 const Button = styled.button({
-  color: "black"
+  color: "white",
+  backgroundColor: "black",
+  marginTop: "16%",
+  height: "30px",
+  width: "50px",   
 });
 
 const BigTitle = styled.h2({
@@ -132,13 +136,13 @@ const CTA = styled.a({
 class Work2 extends Component {
 
   myArrow({ type, onClick, isEdge }) {
-    const pointer = type == consts.Prev ? ' < ' : ' > '
+    const pointer = type === consts.PREV ? '<' : '>'
     return (
-      <Button onClick={onClick} disabled={isEdge}>
-        {pointer}
+      <Button onClick={ onClick } disabled={ isEdge }>
+        { pointer }
       </Button>
     )
-  } 
+  }
 
   render () {
     return (
@@ -146,7 +150,7 @@ class Work2 extends Component {
             <div>
                 <h3 className="workTitle">Work</h3>
             </div>
-            <div>
+            <div className="workCarousel">
             <Carousel itemsToShow={1} renderArrow={this.myArrow}>
                 <Affirmation>
                   <DisplayOver>
