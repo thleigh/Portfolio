@@ -18,9 +18,9 @@ const DisplayOver = styled.div({
 const Button = styled.button({
   color: "white",
   backgroundColor: "black",
-  marginTop: "16%",
+  marginTop: "25%",
   height: "30px",
-  width: "50px",   
+  width: "50px",  
 });
 
 const BigTitle = styled.h2({
@@ -47,6 +47,7 @@ const Paragraph = styled.p({
 });
 
 const TBMP = styled.div({
+  marginTop: "5%",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   color: "#FFF",
@@ -67,6 +68,7 @@ const TBMP = styled.div({
 });
 
 const Upnext = styled.div({
+  marginTop: "5%",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   color: "#FFF",
@@ -87,6 +89,7 @@ const Upnext = styled.div({
 });
 
 const FoodFuse = styled.div({
+  marginTop: "5%",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   color: "#FFF",
@@ -107,6 +110,7 @@ const FoodFuse = styled.div({
 });
 
 const Affirmation = styled.div({
+  marginTop: "5%",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   color: "#FFF",
@@ -178,9 +182,9 @@ class Work2 extends Component {
                     <Hover>
                       <SubTitle>Hone</SubTitle>
                       <Paragraph className="workText">
-                          Hones is a website that provides its users with easily accessible suicide prevention resources and
-                          affirming quotes. Users are able to find local professional help and also have the opportunity to talk to 
-                          random volunteers. Please reach out for a demo!
+                          Hone is an application that provides upscale golf networking experiences across social 
+                          applications, physical events and in-store retail. It helps its consumers connect 
+                          with golfers, industry pros, clubs and other businesses in their respective areas.
                           <br/>
                           <a href="http://www.honenetworks.com/" rel="noreferrer" target="_blank">Hone Site</a>
                       </Paragraph>
