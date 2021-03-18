@@ -131,10 +131,10 @@ const Hone = styled.div({
   backgroundRepeat: "no-repeat",
   color: "#FFF",
   position: "relative",
-  width: "600px",
-  height: "350px",
+  width: "350px",
+  height: "700px",
   cursor: "pointer",
-  backgroundImage: "url(/bg.jpg)",
+  backgroundImage: "url(/honeSS.png)",
   [`:hover ${DisplayOver}`]: {
     backgroundColor: "rgba(0,0,0,.5)",
   },
