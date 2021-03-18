@@ -115,7 +115,7 @@ const Affirmation = styled.div({
   backgroundRepeat: "no-repeat",
   color: "#FFF",
   position: "relative",
-  width: "600px",
+  width: "100%",
   height: "350px",
   cursor: "pointer",
   backgroundImage: "url(/bg.jpg)",
