@@ -131,8 +131,8 @@ const Hone = styled.div({
   backgroundRepeat: "no-repeat",
   color: "#FFF",
   position: "relative",
-  width: "350px",
-  height: "700px",
+  width: "250px",
+  height: "500px",
   cursor: "pointer",
   backgroundImage: "url(/honeSS.png)",
   [`:hover ${DisplayOver}`]: {
@@ -181,10 +181,12 @@ class Work2 extends Component {
                           Hones is a website that provides its users with easily accessible suicide prevention resources and
                           affirming quotes. Users are able to find local professional help and also have the opportunity to talk to 
                           random volunteers. Please reach out for a demo!
+                          <br/>
+                          <a href="http://www.honenetworks.com/" rel="noreferrer" target="_blank">Hone Site</a>
                       </Paragraph>
-                      <CTA>
+                      {/* <CTA>
                         <a href="http://www.honenetworks.com/" rel="noreferrer" target="_blank">Hone Site</a>
-                      </CTA>
+                      </CTA> */}
                     </Hover>
                   </DisplayOver>
                 </Hone>
@@ -197,12 +199,16 @@ class Work2 extends Component {
                           Affirmations is a website that provides its users with easily accessible suicide prevention resources and
                           affirming quotes. Users are able to find local professional help and also have the opportunity to talk to 
                           random volunteers. 
+                          <br/>
+                          <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations Site</a>
+                          <br></br>
+                          <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank">Github</a>
                       </Paragraph>
-                      <CTA>
+                      {/* <CTA>
                         <a href="https://affirmations-client.herokuapp.com/" rel="noreferrer" target="_blank">Affirmations Site</a>
                         <br></br>
                         <a href="https://github.com/thleigh/Affirmations-App" rel="noreferrer" target="_blank">Github</a>
-                      </CTA>
+                      </CTA> */}
                     </Hover>
                   </DisplayOver>
                 </Affirmation>
@@ -216,12 +222,16 @@ class Work2 extends Component {
                         and how to buy them. upnext users will be able to browse older generations of sneakers and 
                         interact with other users through community pages that allow them to post pictures, comment, 
                         like, and favorite.        
-                      </Paragraph>
-                      <CTA>
+                        <br/>
                         <a href="http://upnext-app.herokuapp.com/" rel="noreferrer" target="_blank">Upnext Site</a>
                         <br></br>
                         <a href="https://github.com/thleigh/upnext" rel="noreferrer" target="_blank">Github</a>
-                      </CTA>
+                      </Paragraph>
+                      {/* <CTA>
+                        <a href="http://upnext-app.herokuapp.com/" rel="noreferrer" target="_blank">Upnext Site</a>
+                        <br></br>
+                        <a href="https://github.com/thleigh/upnext" rel="noreferrer" target="_blank">Github</a>
+                      </CTA> */}
                     </Hover>
                   </DisplayOver>
                 </Upnext>
@@ -234,12 +244,16 @@ class Work2 extends Component {
                         TBMP, otherwise known as "The Big Mac Project", finds the price of every Mcdonald's Big Mac meal across the United States and compares them.
                         The goal behind The Big Mac Project is to find the relationship between the cost of living between each city and 
                         how that effects the price of common goods. <b>The Big Mac Project has not been deployed online, but a demo can be shown!</b>
-                      </Paragraph>
-                      <CTA>
+                        <br/>
                         <a href="/" target="_blank">The Big Mac Project Site</a>
                         <br></br>
                         <a href="https://github.com/thleigh/The_Big_Mac_Front_End" rel="noreferrer" target="_blank"> Github</a>
-                      </CTA>
+                      </Paragraph>
+                      {/* <CTA>
+                        <a href="/" target="_blank">The Big Mac Project Site</a>
+                        <br></br>
+                        <a href="https://github.com/thleigh/The_Big_Mac_Front_End" rel="noreferrer" target="_blank"> Github</a>
+                      </CTA> */}
                     </Hover>
                   </DisplayOver>
                 </TBMP>
@@ -252,12 +266,16 @@ class Work2 extends Component {
                         FoodFuse searches and sorts through the 4 major food delivery apps by the user's location and 
                         returns the restaurant's data. FoodFuse provides the users with a comparison of the delivery 
                         fee's and delivery times between each service so that the user can make an educated choice on which app to use.
-                      </Paragraph>
-                      <CTA>
+                        <br/>
                         <a href="https://foodfuse.herokuapp.com/" rel="noreferrer" target="_blank">FoodFuse Site</a>
                         <br></br>
                         <a href="https://github.com/thleigh/FoodFuse" rel="noreferrer" target="_blank"> Github</a>
-                      </CTA>
+                      </Paragraph>
+                      {/* <CTA>
+                        <a href="https://foodfuse.herokuapp.com/" rel="noreferrer" target="_blank">FoodFuse Site</a>
+                        <br></br>
+                        <a href="https://github.com/thleigh/FoodFuse" rel="noreferrer" target="_blank"> Github</a>
+                      </CTA> */}
                     </Hover>
                   </DisplayOver>
                 </FoodFuse>
