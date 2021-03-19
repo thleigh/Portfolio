@@ -57,7 +57,7 @@ const TBMP = styled.div({
   cursor: "pointer",
   backgroundImage: "url(/tbmp.jpg)",
   [`:hover ${DisplayOver}`]: {
-    backgroundColor: "rgba(0,0,0,.5)",
+    backgroundColor: "rgba(0,0,0,.85)",
   },
   [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
     transform: "translate3d(0,0,0)",
@@ -78,7 +78,7 @@ const Upnext = styled.div({
   cursor: "pointer",
   backgroundImage: "url(/upnext.jpg)",
   [`:hover ${DisplayOver}`]: {
-    backgroundColor: "rgba(0,0,0,.5)",
+    backgroundColor: "rgba(0,0,0,.85)",
   },
   [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
     transform: "translate3d(0,0,0)",
@@ -99,7 +99,7 @@ const FoodFuse = styled.div({
   cursor: "pointer",
   backgroundImage: "url(/foodfuse.jpg)",
   [`:hover ${DisplayOver}`]: {
-    backgroundColor: "rgba(0,0,0,.5)",
+    backgroundColor: "rgba(0,0,0,.85)",
   },
   [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
     transform: "translate3d(0,0,0)",
@@ -120,7 +120,7 @@ const Affirmation = styled.div({
   cursor: "pointer",
   backgroundImage: "url(/bg.jpg)",
   [`:hover ${DisplayOver}`]: {
-    backgroundColor: "rgba(0,0,0,.5)",
+    backgroundColor: "rgba(0,0,0,.85)",
   },
   [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
     transform: "translate3d(0,0,0)",
@@ -140,7 +140,7 @@ const Hone = styled.div({
   cursor: "pointer",
   backgroundImage: "url(/honeSS.png)",
   [`:hover ${DisplayOver}`]: {
-    backgroundColor: "rgba(0,0,0,.5)",
+    backgroundColor: "rgba(0,0,0,.85)",
   },
   [`:hover ${SubTitle}, :hover ${Paragraph}`]: {
     transform: "translate3d(0,0,0)",
